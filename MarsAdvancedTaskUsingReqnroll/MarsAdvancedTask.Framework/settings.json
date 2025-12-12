@@ -1,0 +1,17 @@
+{
+  "Browser": {
+    "Type": "Chrome",
+    "Headless": false,
+    "TimeoutSeconds": 30
+  },
+  "Report": {
+    "Path": "TestReport.html",
+    "Title": "Mars Project Report"
+  },
+  "Environment": {
+    "BaseUrl": "http://localhost:5003/",
+    "TestingEnvironment": "QA",
+    "Tester": "Ambika",
+    "OS": "Windows 12"
+  }
+}

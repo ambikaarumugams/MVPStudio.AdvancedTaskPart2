@@ -1,0 +1,56 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Test Automation using Nunit",
+      "Description": "Test automation using Selenium Nunit and Reqnroll framework",
+      "Category": "Test Automation",
+      "SubCategory": "Cucumber/Specflow",
+      "Tags": ["Selenium", "BDD", "Reqnroll"],
+      "ServiceType": 0,
+      "LocationType": 0,
+      "Events": [
+        {
+          "Title": "Mon Slot",
+          "StartDateTime": "9/30/2025 10:30 AM",
+          "EndDateTime": "9/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Automation office hour",
+          "Owner": "Alex"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": ["Jmeter", "Performance Testing"],
+      "WorkSamples": [],
+      "Active": true,
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Mindfulness",
+      "Description": "Discover new ways to enjoy your free time with creative activities social events and hobbies that bring joy and relaxation into your daily life",
+      "Category": "Fun and Lifestyle",
+      "SubCategory": "Other",
+      "Tags": ["Hobbies", "Wellness", "Joy"],
+      "ServiceType": 1,
+      "LocationType": 1,
+      "Events": [
+        {
+          "Title": "Tue Slot",
+          "StartDateTime": "10/10/2025 10:30 AM",
+          "EndDateTime": "10/15/2025 10:30 PM",
+          "Repeat": "Weekly",
+          "Description": "Morning practice",
+          "Owner": "Alex"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "SkillExchangeTags": ["Diet", "Exercises"],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": true,
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null
+    }
+  ]
+}

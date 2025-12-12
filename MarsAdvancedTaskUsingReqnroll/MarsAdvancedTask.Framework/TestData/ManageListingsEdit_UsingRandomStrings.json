@@ -1,0 +1,72 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "hhgjgjmbmdb",
+      "Description": "Specflow,Reqnroll",
+      "Category": "Test Automation",
+      "SubCategory": "Cucumber/Specflow",
+      "Tags": [
+        "BDD",
+        "Cucumber"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "JMeter",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand timers",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "AI",
+        "Testing"
+      ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Invalid Title",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": "hhgjgjmbmdb",
+      "Description": "Specflow,Reqnroll",
+      "Category": "Test Automation",
+      "SubCategory": "Cucumber/Specflow",
+      "Tags": [
+        "BDD",
+        "Cucumber"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "JMeter",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand timers",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "AI",
+        "Testing"
+      ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Invalid Title",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
+}

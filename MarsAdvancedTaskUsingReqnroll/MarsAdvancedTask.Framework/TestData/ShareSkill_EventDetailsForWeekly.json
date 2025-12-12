@@ -1,0 +1,12 @@
+{
+  "EventTitle": "Training",
+  "StartDateTime": "08/09/2025 02:00 PM",
+  "EndDateTime": "08/09/2025 03:00 PM",
+  "AllDay": "false",
+  "RepeatRule": "Weekly",
+  "RepeatWeeks": "2",
+  "RepeatDay": "Su",
+  "RepeatEndNever": "true",
+  "Description": "Boot-camp",
+  "Owner": "Bob"
+}

@@ -1,0 +1,224 @@
+{
+  "ShareSkills": [
+    {
+      "Title": " ",
+      "Description": " ",
+      "Category": " ",
+      "SubCategory": " ",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "Credit": null,
+      "SkillExchangeTags": [],
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": " ",
+      "Category": " ",
+      "SubCategory": " ",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": " ",
+      "SubCategory": " ",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "Credit": null,
+      "SkillExchangeTags": [],
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": " ",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": "Communication at Work",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": "Communication at Work",
+      "Tags": [
+        "Speaking",
+        "Work",
+        "Presentation"
+      ],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": "Communication at Work",
+      "Tags": [
+        "Speaking",
+        "Work",
+        "Presentation"
+      ],
+      "ServiceType": 0,
+      "LocationType": 1,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": "Communication at Work",
+      "Tags": [
+        "Speaking",
+        "Work",
+        "Presentation"
+      ],
+      "ServiceType": 0,
+      "LocationType": 1,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": "Skill-Exchange",
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    }
+  ]
+}

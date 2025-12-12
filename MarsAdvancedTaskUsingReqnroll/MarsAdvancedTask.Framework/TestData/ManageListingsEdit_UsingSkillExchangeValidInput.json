@@ -1,0 +1,112 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Test Automation",
+      "Description": "Test automation using Selenium,Nunit and Reqnroll",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [ "Selenium", "BDD", "Reqnroll" ],
+      "ServiceType": "0",
+      "LocationType": "0",
+      "Events": [
+        {
+          "Title": "Mon Slot",
+          "StartDateTime": "9/30/2025 10:30 AM",
+          "EndDateTime": "9/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Automation office hour",
+          "Owner": "Alex"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "Jmeter", "Performance Testing" ],
+      "WorkSamples": [ "TestData\\TestAutomation.jpg" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Yoga Classes",
+      "Description": "Hatha and Vinyasa yoga classes for all levels.",
+      "Category": "Fun & Lifestyle",
+      "SubCategory": "Health, Nutrition & Fitness",
+      "Tags": [ "Yoga", "Wellness", "Fitness" ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Yoga",
+          "StartDateTime": "10/30/2025 10:30 AM",
+          "EndDateTime": "10/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Yoga for beginners",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "SkillExchangeTags": [ "Diet", "Excercises" ],
+      "Credit": null,
+      "WorkSamples": [ "TestData\\Yoga.png" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": "Advanced Test Automation",
+      "Description": "Advanced Test automation using Selenium,Nunit and Reqnroll",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [ "Selenium", "BDD", "Reqnroll" ],
+      "ServiceType": "0",
+      "LocationType": "0",
+      "Events": [
+        {
+          "Title": "Mon Slot",
+          "StartDateTime": "9/30/2025 10:30 AM",
+          "EndDateTime": "9/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Advanced Automation office hour",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "Jmeter", "Performance Testing" ],
+      "WorkSamples": [ "TestData\\TestAutomation.jpg" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Updated successfully",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Yoga Classes Intermediate",
+      "Description": "Hatha and Vinyasa yoga classes for intermediate.",
+      "Category": "Fun & Lifestyle",
+      "SubCategory": "Health, Nutrition & Fitness",
+      "Tags": [ "Yoga", "Wellness", "Fitness", "Breathing Excercise" ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Yoga",
+          "StartDateTime": "10/30/2025 10:30 AM",
+          "EndDateTime": "10/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Yoga for beginners",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "SkillExchangeTags": [ "Diet", "Excercises" ],
+      "Credit": null,
+      "WorkSamples": [ "TestData\\Yoga.png" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Updated successfully",
+      "ExpectedToastContains": null
+    }
+  ]
+}
+
+

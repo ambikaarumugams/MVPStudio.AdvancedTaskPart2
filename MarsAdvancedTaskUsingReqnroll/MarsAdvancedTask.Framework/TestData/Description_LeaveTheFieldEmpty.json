@@ -1,0 +1,8 @@
+{
+  "DescriptionItems": [
+    {
+      "DescriptionText": " ",
+      "ExpectedDescriptionMessage": "Please, a description is required"
+    }
+  ]
+}

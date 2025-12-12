@@ -1,0 +1,15 @@
+{
+  "TestItems": [
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "University of Sydney",
+        "Country": "Australia",
+        "Title": "BFA",
+        "Degree": "Acting",
+        "YearOfGraduation": "2009",
+        "EducationExpectedMessage": "undefined"
+      },
+      "EducationDetailsToDelete": null
+    }
+  ]
+}

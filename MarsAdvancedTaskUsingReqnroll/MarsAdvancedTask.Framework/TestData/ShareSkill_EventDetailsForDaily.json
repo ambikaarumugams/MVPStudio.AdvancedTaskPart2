@@ -1,0 +1,16 @@
+{
+  "EventTitle": "Selenium",
+  "StartDateTime": "08/09/2025 09:00 AM",
+  "EndDateTime": "08/09/2025 09:15 AM",
+  "AllDay": "false",
+  "RepeatRule": "Daily",
+  "RepeatDays": "1",
+  "RepeatEndOn": "31/12/2025",
+  "Description": "Different locators",
+  "Owner": "Charlie",
+  "ExpectedMessageForEvent": "Event has saved successfully"
+}
+
+
+
+

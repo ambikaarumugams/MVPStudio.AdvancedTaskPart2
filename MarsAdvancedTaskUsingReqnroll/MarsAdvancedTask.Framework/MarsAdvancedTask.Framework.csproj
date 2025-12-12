@@ -7,8 +7,374 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="settings.json" />
+    <None Remove="TestData\AddCertificationDetails_Cancel.json" />
+    <None Remove="TestData\AddCertificationDetails_CertificateOrAwardAndCertificateMismatch.json" />
+    <None Remove="TestData\AddCertificationDetails_DestructiveTesting.json" />
+    <None Remove="TestData\AddCertificationDetails_DuplicateData.json" />
+    <None Remove="TestData\AddCertificationDetails_InvalidCertificateFrom.json" />
+    <None Remove="TestData\AddCertificationDetails_InvalidCertificateOrAward.json" />
+    <None Remove="TestData\AddCertificationDetails_LeaveEitherOneOrAllTheFieldsEmpty.json" />
+    <None Remove="TestData\AddCertificationDetails_MoreThan250CharactersOfCertificateFrom.json" />
+    <None Remove="TestData\AddCertificationDetails_MoreThan250CharactersOfCertificateOrAward.json" />
+    <None Remove="TestData\AddCertificationDetails_ValidInput.json" />
+    <None Remove="TestData\AddCertificationDetails_WhenSessionExpired.json" />
+    <None Remove="TestData\AddEducationDetails_Cancel.json" />
+    <None Remove="TestData\AddEducationDetails_DestructiveTesting.json" />
+    <None Remove="TestData\AddEducationDetails_DuplicateData.json" />
+    <None Remove="TestData\AddEducationDetails_InvalidCollegeUniversityName.json" />
+    <None Remove="TestData\AddEducationDetails_InvalidDegree.json" />
+    <None Remove="TestData\AddEducationDetails_LeaveEitherOneOrAllTheFieldsEmpty.json" />
+    <None Remove="TestData\AddEducationDetails_MoreThan250CharactersOfCollegeUniversityName.json" />
+    <None Remove="TestData\AddEducationDetails_MoreThan250CharactersOfDegreeName.json" />
+    <None Remove="TestData\AddEducationDetails_NegativeTestingWithValidInput.json" />
+    <None Remove="TestData\AddEducationDetails_ValidInput.json" />
+    <None Remove="TestData\AddEducationDetails_WhenSessionExpired.json" />
+    <None Remove="TestData\ChangePassword_ChangeToOldPassword.json" />
+    <None Remove="TestData\ChangePassword_CurrentPasswordAsNewPassword.json" />
+    <None Remove="TestData\ChangePassword_InvalidCurrentPassword.json" />
+    <None Remove="TestData\ChangePassword_LeadingTrailingSpaces.json" />
+    <None Remove="TestData\ChangePassword_LeaveEitherOneOrAllTheFieldsAreEmpty.json" />
+    <None Remove="TestData\ChangePassword_MaximumPasswordLength.json" />
+    <None Remove="TestData\ChangePassword_MinimumPasswordLength.json" />
+    <None Remove="TestData\ChangePassword_MismatchBetweenNewPasswordAndConfirmPassword.json" />
+    <None Remove="TestData\ChangePassword_RandomNumbers.json" />
+    <None Remove="TestData\ChangePassword_RandomStrings.json" />
+    <None Remove="TestData\ChangePassword_Valid.json" />
+    <None Remove="TestData\ChangePassword_WeakPassword.json" />
+    <None Remove="TestData\ChangePassword_WhenSessionHasExpired.json" />
+    <None Remove="TestData\DeleteCertificationDetails_ValidInput.json" />
+    <None Remove="TestData\DeleteCertificationDetails_WhenSessionExpired.json" />
+    <None Remove="TestData\DeleteEducationDetails_ValidInput.json" />
+    <None Remove="TestData\DeleteEducationDetails_WhenSessionExpired.json" />
+    <None Remove="TestData\Description_BoundaryCheck.json" />
+    <None Remove="TestData\Description_DestructiveData.json" />
+    <None Remove="TestData\Description_GetPlaceholderText.json" />
+    <None Remove="TestData\Description_LeadingAndTrailingSpaces.json" />
+    <None Remove="TestData\Description_LeaveTheFieldEmpty.json" />
+    <None Remove="TestData\Description_UsingAlphanumerics.json" />
+    <None Remove="TestData\Description_UsingRandomNumbers.json" />
+    <None Remove="TestData\Description_UsingRandomStrings.json" />
+    <None Remove="TestData\Description_UsingSpace.json" />
+    <None Remove="TestData\Description_UsingSpecialCharacters.json" />
+    <None Remove="TestData\Description_ValidInput.json" />
+    <None Remove="TestData\LoginData.json" />
+    <None Remove="TestData\ManageListingsEdit_Title100Characters.json" />
+    <None Remove="TestData\ManageListingsEdit_UsingCreditValidInput.json" />
+    <None Remove="TestData\ManageListingsEdit_UsingFirstCharacterAsANumber.json" />
+    <None Remove="TestData\ManageListingsEdit_UsingFirstCharacterAsAWhiteSpace.json" />
+    <None Remove="TestData\ManageListingsEdit_UsingRandomStrings.json" />
+    <None Remove="TestData\ManageListingsEdit_UsingSpecialCharacters.json" />
+    <None Remove="TestData\ManageListingsView.json" />
+    <None Remove="TestData\SampleTextFile.txt" />
+    <None Remove="TestData\SampleWord.docx" />
+    <None Remove="TestData\ShareSkill_AddEvents.json" />
+    <None Remove="TestData\ShareSkill_BoundaryCheckForDescriptionLessThan600Characters.json" />
+    <None Remove="TestData\ShareSkill_BoundaryCheckForDescriptionMoreThan600Characters.json" />
+    <None Remove="TestData\ShareSkill_BoundaryCheckForTitle100Charcters.json" />
+    <None Remove="TestData\ShareSkill_BoundaryCheckForTitleLessThan100Characters.json" />
+    <None Remove="TestData\ShareSkill_BoundaryCheckForTitleMoreThan100Characters.json" />
+    <None Remove="TestData\ShareSkill_EventDetailsForDaily.json" />
+    <None Remove="TestData\ShareSkill_EventDetailsForMonthly.json" />
+    <None Remove="TestData\ShareSkill_EventDetailsForWeekly.json" />
+    <None Remove="TestData\ShareSkill_EventDetailsForYearly.json" />
+    <None Remove="TestData\ShareSkill_InvalidDescriptionFirstCharacterWhiteSpace.json" />
+    <None Remove="TestData\ShareSkill_InvalidDescriptionStringStartsWithNumbers.json" />
+    <None Remove="TestData\ShareSkill_InvalidDescriptionWithNumbers.json" />
+    <None Remove="TestData\ShareSkill_InvalidDescriptionWithRandomStrings.json" />
+    <None Remove="TestData\ShareSkill_InvalidDescriptionWithSpecialCharacters.json" />
+    <None Remove="TestData\ShareSkill_InvalidSkillExchangeTags.json" />
+    <None Remove="TestData\ShareSkill_InvalidTags.json" />
+    <None Remove="TestData\ShareSkill_InvalidTitleFirstCharacterWhiteSpace.json" />
+    <None Remove="TestData\ShareSkill_InvalidTitleRandomStrings.json" />
+    <None Remove="TestData\ShareSkill_InvalidTitleSpecialCharacters.json" />
+    <None Remove="TestData\ShareSkill_InvalidTitleStringStartsWithNumbers.json" />
+    <None Remove="TestData\ShareSkill_LeaveEitherOneOrAllTheRequiredFieldsAreEmpty.json" />
+    <None Remove="TestData\ShareSkill_ServiceLocationType.json" />
+    <None Remove="TestData\ShareSkill_UsingCreditValidInput.json" />
+    <None Remove="TestData\ShareSkill_WorkSamples.json" />
+    <None Remove="TestData\TestAutomation.jpg" />
+    <None Remove="TestData\test_analyst_programme.mp4" />
+    <None Remove="TestData\Yoga.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_Cancel.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_CertificateOrAwardAndCertificateMismatch.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_DestructiveTesting.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_DuplicateData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_InvalidCertificateFrom.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_InvalidCertificateOrAward.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_LeaveEitherOneOrAllTheFieldsEmpty.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_MoreThan250CharactersOfCertificateFrom.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_MoreThan250CharactersOfCertificateOrAward.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_ValidInput.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddCertificationDetails_WhenSessionExpired.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_Cancel.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_DestructiveTesting.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_DuplicateData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_InvalidCollegeUniversityName.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_InvalidDegree.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_LeaveEitherOneOrAllTheFieldsEmpty.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_MoreThan250CharactersOfCollegeUniversityName.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_MoreThan250CharactersOfDegreeName.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_NegativeTestingWithValidInput.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_ValidInput.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\AddEducationDetails_WhenSessionExpired.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_ChangeToOldPassword.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_CurrentPasswordAsNewPassword.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_InvalidCurrentPassword.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_LeadingTrailingSpaces.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_LeaveEitherOneOrAllTheFieldsAreEmpty.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_MaximumPasswordLength.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_MinimumPasswordLength.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_MismatchBetweenNewPasswordAndConfirmPassword.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_RandomNumbers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_RandomStrings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_SpecialCharacters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_Valid.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_WeakPassword.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ChangePassword_WhenSessionHasExpired.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\DeleteCertificationDetails_ValidInput.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\DeleteCertificationDetails_WhenSessionExpired.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\DeleteEducationDetails_ValidInput.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\DeleteEducationDetails_WhenSessionExpired.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_BoundaryCheck.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_DestructiveData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_GetPlaceholderText.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_LeadingAndTrailingSpaces.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_LeaveTheFieldEmpty.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_UsingAlphanumerics.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_UsingRandomNumbers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_UsingRandomStrings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_UsingSpace.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_UsingSpecialCharacters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Description_ValidInput.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\LoginData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_Title100Characters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_UsingCreditValidInput.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_UsingFirstCharacterAsANumber.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_UsingFirstCharacterAsAWhiteSpace.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_UsingRandomStrings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_UsingSpecialCharacters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsView.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\SampleTextFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\SampleWord.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_AddEvents.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_BoundaryCheckForDescriptionLessThan600Characters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_BoundaryCheckForDescriptionMoreThan600Characters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_BoundaryCheckForTitle100Charcters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_BoundaryCheckForTitleLessThan100Characters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_BoundaryCheckForTitleMoreThan100Characters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_EventDetailsForDaily.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_EventDetailsForMonthly.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_EventDetailsForWeekly.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_EventDetailsForYearly.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidDescriptionFirstCharacterWhiteSpace.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidDescriptionWithNumbers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidDescriptionWithRandomStrings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidDescriptionWithSpecialCharacters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidSkillExchangeTags.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidTags.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidTitleFirstCharacterWhiteSpace.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidTitleRandomStrings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidTitleSpecialCharacters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_InvalidTitleStringStartsWithNumbers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_LeaveEitherOneOrAllTheRequiredFieldsAreEmpty.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_ServiceLocationType.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_UsingCreditValidInput.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_UsingSkillExchangeValidInput.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ShareSkill_WorkSamples.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TestAutomation.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\test_analyst_programme.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Yoga.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="ExtentReports" Version="5.0.4" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="NUnit" Version="4.4.0" />
     <PackageReference Include="Selenium.Support" Version="4.38.0" />
     <PackageReference Include="Selenium.WebDriver" Version="4.38.0" />
     <PackageReference Include="SeleniumExtras.WaitHelpers" Version="1.0.2" />
@@ -16,9 +382,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
-    <Folder Include="Models\" />
-    <Folder Include="Pages\" />
+    <Page Include="TestData\ShareSkill_InvalidDescriptionStringStartsWithNumbers.json" />
   </ItemGroup>
 
 </Project>

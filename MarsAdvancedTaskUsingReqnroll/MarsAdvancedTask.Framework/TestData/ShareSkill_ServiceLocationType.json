@@ -1,0 +1,128 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Introduction to Data Science and AI for Beginners",
+      "Description": "Learn how data science techniques are applied to big data environments This course covers the fundamentals of distributed data storage parallel processing and analytics using tools such as Hadoop Spark and Hive Students will gain hands on experience building scalable pipelines and applying machine learning models to large datasets",
+      "Category": "Data Science",
+      "SubCategory": "Big Data",
+      "Tags": [
+        "data",
+        "storage",
+        "tools"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Data Science and AI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Learn how data science techniques are applied to big data environments",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "API", "Postman" ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Applied Data Science using Python R and SQL",
+      "Description": "This training program focuses on practical projects that combine data science and big data technologies Participants will learn how to clean transform and analyze large scale data using Spark implement predictive models and visualize results with modern dashboards Each project is designed to simulate real industry use cases",
+      "Category": "Data Science",
+      "SubCategory": "Big Data",
+      "Tags": [
+        "data",
+        "storage",
+        "tools"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Data Science",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "This training program focuses on practical projects that combine data science and big data technologies",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "API", "Postman" ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Data Science End to End Projects with Real World Datasets",
+      "Description": "Dive deeper into modern deep learning frameworks with modules on neural networks convolutional networks recurrent networks and transformers Participants will apply these models to computer vision and natural language processing projects using TensorFlow and PyTorch",
+      "Category": "Data Science",
+      "SubCategory": "Big Data",
+      "Tags": [
+        "data",
+        "storage",
+        "tools"
+      ],
+      "ServiceType": "1",
+      "LocationType": "0",
+      "Events": [
+        {
+          "Title": "End to End Projects with Real World Datasets",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Dive deeper into modern deep learning frameworks with modules on neural networks convolutional networks",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "API", "Postman" ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Data Science with Big Data Analytics",
+      "Description": "Learn how data science techniques are applied to big data environments This course covers the fundamentals of distributed data storage parallel processing and analytics using tools such as Hadoop Spark and Hive Students will gain hands on experience building scalable pipelines and applying machine learning models to large datasets",
+      "Category": "Data Science",
+      "SubCategory": "Big Data",
+      "Tags": [
+        "data",
+        "storage",
+        "tools"
+      ],
+      "ServiceType": "0",
+      "LocationType": "0",
+      "Events": [
+        {
+          "Title": "Big Data",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Learn how data science techniques are applied to big data environments",
+          "Owner": "Alex"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "API", "Postman" ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
+}
