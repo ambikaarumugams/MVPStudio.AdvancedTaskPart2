@@ -74,7 +74,7 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                 _manageListingsEditComponent.ClickSave();
                 var successMessage = _manageListingsEditComponent.GetSuccessMessage();
                 Console.WriteLine($"Message:{successMessage}");
-                Thread.Sleep(6000);
+                Thread.Sleep(5000);
                 var errorMessage = _manageListingsEditComponent.GetWorkSamplesErrorText();
                 Console.WriteLine($"Error message for worksamples:{errorMessage}");
                 Thread.Sleep(6000);
@@ -119,9 +119,10 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                 var updatedSuccessMessage = _manageListingsEditComponent.GetSuccessMessage();
                 _state.ActualManageListingsEdit.Add(updatedSuccessMessage);
                 Console.WriteLine($"Message:{updatedSuccessMessage}");
-                Thread.Sleep(6000);
+                Thread.Sleep(5000);
                 var updatedErrorMessage = _manageListingsEditComponent.GetWorkSamplesErrorText();
                 Console.WriteLine($"Error message for worksamples:{updatedErrorMessage}");
+                Thread.Sleep(5000);
                 _manageListingsEditComponent.ClickCancel();
                 _state.ExpectedManageListingsEdit.Add(update.ExpectedToastMessage);
                 _state.CleanupManageListingsEdit.Add(update.Title);
@@ -259,6 +260,15 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                     _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
                 }
 
+                foreach (var workSample in add.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
                 _manageListingsEditComponent.SetActiveStatus(add.Active);
                 _manageListingsEditComponent.ClickSave();
                 var successMessage = _manageListingsEditComponent.GetSuccessMessage();
@@ -279,7 +289,6 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                 }
                 _manageListingsEditComponent.SelectServiceType(update.ServiceType);
                 _manageListingsEditComponent.SelectLocationType(update.LocationType);
-
                 _manageListingsEditComponent.ClickCalendarAndSelectCurrentDate();
                 _manageListingsEditComponent.ClickWeekLink();
                 _manageListingsEditComponent.SelectSkillTradeType(update.SkillTradeType);
@@ -288,11 +297,25 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                 {
                     _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
                 }
+
+                foreach (var workSample in update.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
                 _manageListingsEditComponent.SetActiveStatus(update.Active);
                 _manageListingsEditComponent.ClickSave();
                 var updatedSuccessMessage = _manageListingsEditComponent.GetSuccessMessage();
                 _state.ActualManageListingsEdit.Add(updatedSuccessMessage);
                 Console.WriteLine($"Message:{updatedSuccessMessage}");
+                var updatedErrorMessage = _manageListingsEditComponent.GetWorkSamplesErrorText();
+                Console.WriteLine($"Error message for worksamples:{updatedErrorMessage}");
+                Thread.Sleep(5000);
+                _manageListingsEditComponent.ClickCancel();
                 _state.ExpectedManageListingsEdit.Add(update.ExpectedToastMessage);
                 _state.CleanupManageListingsEdit.Add(update.Title);
             }
@@ -301,7 +324,6 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
         [When("I update the shared  title using special characters in the Manage listings from the json file {string}")]
         public void WhenIUpdateTheSharedTitleUsingSpecialCharactersInTheManageListingsFromTheJsonFile(string fileName)
         {
-
             var shareSkillsDetails = JsonHelper.ReadJson<ShareSkillModel>($"TestData/{fileName}");
 
             for (int i = 0; i < shareSkillsDetails.ShareSkills.Count; i++)
@@ -371,6 +393,16 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                 {
                     _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
                 }
+
+                foreach (var workSample in update.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
                 _manageListingsEditComponent.SetActiveStatus(update.Active);
                 _manageListingsEditComponent.ClickSave();
                 var updateErrorMessage = _manageListingsEditComponent.GetErrorMessage();
@@ -418,6 +450,15 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                     _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
                 }
 
+                foreach (var workSample in add.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
                 _manageListingsEditComponent.SetActiveStatus(add.Active);
                 _manageListingsEditComponent.ClickSave();
                 var successMessage = _manageListingsEditComponent.GetSuccessMessage();
@@ -447,6 +488,16 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                 foreach (var skillTag in update.SkillExchangeTags)
                 {
                     _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
+                }
+
+                foreach (var workSample in update.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
                 }
                 _manageListingsEditComponent.SetActiveStatus(update.Active);
                 _manageListingsEditComponent.ClickSave();
@@ -496,6 +547,15 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                     _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
                 }
 
+                foreach (var workSample in add.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
                 _manageListingsEditComponent.SetActiveStatus(add.Active);
                 _manageListingsEditComponent.ClickSave();
                 var successMessage = _manageListingsEditComponent.GetSuccessMessage();
@@ -526,18 +586,32 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                 {
                     _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
                 }
+
+                foreach (var workSample in update.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
                 _manageListingsEditComponent.SetActiveStatus(update.Active);
                 _manageListingsEditComponent.ClickSave();
                 var updateSuccessMessage = _manageListingsEditComponent.GetSuccessMessage();
                 Console.WriteLine($"Pop up Message:{updateSuccessMessage}");
                 _state.ActualManageListingsEdit.Add(updateSuccessMessage);
+                var updatedErrorMessage = _manageListingsEditComponent.GetWorkSamplesErrorText();
+                Console.WriteLine($"Error message for worksamples:{updatedErrorMessage}");
+                Thread.Sleep(5000);
+                _manageListingsEditComponent.ClickCancel();
                 _state.ExpectedManageListingsEdit.Add(update.ExpectedToastMessage);
                 _state.CleanupManageListingsEdit.Add(update.Title);
             }
         }
 
-        [When("I update the shared skill title with  characters in the Manage listings from the json file {string}")]
-        public void WhenIUpdateTheSharedSkillTitleWithCharactersInTheManageListingsFromTheJsonFile(string fileName)
+        [When("I update the shared skill title in the Manage listings from the json file {string}")]
+        public void WhenIUpdateTheSharedSkillTitleInTheManageListingsFromTheJsonFile(string fileName)
         {
             var shareSkillsDetails = JsonHelper.ReadJson<ShareSkillModel>($"TestData/{fileName}");
 
@@ -569,6 +643,15 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                     _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
                 }
 
+                foreach (var workSample in add.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
                 _manageListingsEditComponent.SetActiveStatus(add.Active);
                 _manageListingsEditComponent.ClickSave();
                 var successMessage = _manageListingsEditComponent.GetSuccessMessage();
@@ -599,19 +682,318 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                 {
                     _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
                 }
+
+                foreach (var workSample in update.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
+
                 _manageListingsEditComponent.SetActiveStatus(update.Active);
                 _manageListingsEditComponent.ClickSave();
                 var updateSuccessMessage = _manageListingsEditComponent.GetSuccessMessage();
-                Console.WriteLine($"Pop up Message:{updateSuccessMessage}");
+                Console.WriteLine($"Message:{updateSuccessMessage}");
                 _state.ActualManageListingsEdit.Add(updateSuccessMessage);
+                Thread.Sleep(6000);
+                var updatedErrorMessage = _manageListingsEditComponent.GetWorkSamplesErrorText();
+                Console.WriteLine($"Error message for worksamples:{updatedErrorMessage}");
+                _manageListingsEditComponent.ClickCancel();
                 _state.ExpectedManageListingsEdit.Add(update.ExpectedToastMessage);
                 _state.CleanupManageListingsEdit.Add(update.Title);
             }
         }
 
+        [When("I update the shared skill description with the special characters from the json file {string}")]
+        public void WhenIUpdateTheSharedSkillDescriptionWithTheSpecialCharactersFromTheJsonFile(string fileName)
+        {
+            var shareSkillsDetails = JsonHelper.ReadJson<ShareSkillModel>($"TestData/{fileName}");
 
+            for (int i = 0; i < shareSkillsDetails.ShareSkills.Count; i++)
+            {
+                var add = shareSkillsDetails.ShareSkills[i];
+                var update = shareSkillsDetails.EditShareSkills[i];
 
+                _manageListingsEditComponent.ScrollToCenterOfThePage();
+                _manageListingsEditComponent.ClickShareSkill();
+                _manageListingsEditComponent.EnterTitle(add.Title);
+                _manageListingsEditComponent.EnterDescription(add.Description);
+                _manageListingsEditComponent.SelectCategory(add.Category);
+                _manageListingsEditComponent.SelectSubCategory(add.SubCategory);
+                foreach (var tag in add.Tags)
+                {
+                    _manageListingsEditComponent.AddTag(tag);
+                }
 
+                _manageListingsEditComponent.SelectServiceType(add.ServiceType);
+                _manageListingsEditComponent.SelectLocationType(add.LocationType);
+
+                _manageListingsEditComponent.ClickCalendarAndSelectCurrentDate();
+                _manageListingsEditComponent.ClickWeekLink();
+                _manageListingsEditComponent.SelectSkillTradeType(add.SkillTradeType);
+
+                foreach (var skillTag in add.SkillExchangeTags)
+                {
+                    _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
+                }
+
+                foreach (var workSample in add.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
+                _manageListingsEditComponent.SetActiveStatus(add.Active);
+                _manageListingsEditComponent.ClickSave();
+                var successMessage = _manageListingsEditComponent.GetSuccessMessage();
+                Console.WriteLine($"Pop up Message:{successMessage}");
+                _state.CleanupManageListingsEdit.Add(add.Title);
+
+                _manageListingsEditComponent.ClickManageListingsLink();
+                _manageListingsEditComponent.ClickEditIcon(add.Title);
+                _manageListingsEditComponent.ScrollToCenterOfThePage();  //Scroll the page to the center to make share skill visible
+
+                _manageListingsEditComponent.EnterTitle(update.Title);
+                _manageListingsEditComponent.EnterDescription(update.Description);
+                _manageListingsEditComponent.SelectCategory(update.Category);
+                _manageListingsEditComponent.SelectSubCategory(update.SubCategory);
+
+                foreach (var tag in update.Tags)
+                {
+                    _manageListingsEditComponent.AddTag(tag);
+                }
+                _manageListingsEditComponent.SelectServiceType(update.ServiceType);
+                _manageListingsEditComponent.SelectLocationType(update.LocationType);
+
+                _manageListingsEditComponent.ClickCalendarAndSelectCurrentDate();
+                _manageListingsEditComponent.ClickWeekLink();
+                _manageListingsEditComponent.SelectSkillTradeType(update.SkillTradeType);
+
+                foreach (var skillTag in update.SkillExchangeTags)
+                {
+                    _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
+                }
+
+                foreach (var workSample in update.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
+                _manageListingsEditComponent.SetActiveStatus(update.Active);
+                _manageListingsEditComponent.ClickSave();
+                var updateErrorMessage = _manageListingsEditComponent.GetErrorMessage();
+                Console.WriteLine($"Pop up Message:{updateErrorMessage}");
+                _state.ActualManageListingsEdit.Add(updateErrorMessage);
+                _state.ExpectedManageListingsEdit.Add(update.ExpectedToastMessage);
+                var fieldErrorText = _manageListingsEditComponent.GetTextOfTitleFieldErrorMessage();
+                Console.Write($"Field error message:{fieldErrorText}");
+                _state.ActualFieldMessagesForManageListingsEdit.Add(fieldErrorText);
+                _state.ExpectedFieldMessagesForManageListingsEdit.Add(update.ExpectedFieldErrorMessage);
+                _manageListingsEditComponent.ClickCancel();
+            }
+        }
+
+        [When("I update the shared skill description with the random strings from the json file {string}")]
+        public void WhenIUpdateTheSharedSkillDescriptionWithTheRandomStringsFromTheJsonFile(string fileName)
+        {
+            var shareSkillsDetails = JsonHelper.ReadJson<ShareSkillModel>($"TestData/{fileName}");
+
+            for (int i = 0; i < shareSkillsDetails.ShareSkills.Count; i++)
+            {
+                var add = shareSkillsDetails.ShareSkills[i];
+                var update = shareSkillsDetails.EditShareSkills[i];
+
+                _manageListingsEditComponent.ScrollToCenterOfThePage();
+                _manageListingsEditComponent.ClickShareSkill();
+                _manageListingsEditComponent.EnterTitle(add.Title);
+                _manageListingsEditComponent.EnterDescription(add.Description);
+                _manageListingsEditComponent.SelectCategory(add.Category);
+                _manageListingsEditComponent.SelectSubCategory(add.SubCategory);
+                foreach (var tag in add.Tags)
+                {
+                    _manageListingsEditComponent.AddTag(tag);
+                }
+
+                _manageListingsEditComponent.SelectServiceType(add.ServiceType);
+                _manageListingsEditComponent.SelectLocationType(add.LocationType);
+
+                _manageListingsEditComponent.ClickCalendarAndSelectCurrentDate();
+                _manageListingsEditComponent.ClickWeekLink();
+                _manageListingsEditComponent.SelectSkillTradeType(add.SkillTradeType);
+
+                foreach (var skillTag in add.SkillExchangeTags)
+                {
+                    _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
+                }
+
+                foreach (var workSample in add.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
+                _manageListingsEditComponent.SetActiveStatus(add.Active);
+                _manageListingsEditComponent.ClickSave();
+                var successMessage = _manageListingsEditComponent.GetSuccessMessage();
+                Console.WriteLine($"Pop up Message:{successMessage}");
+
+                _manageListingsEditComponent.ClickManageListingsLink();
+                _manageListingsEditComponent.ClickEditIcon(add.Title);
+
+                _manageListingsEditComponent.ScrollToCenterOfThePage();  //Scroll the page to the center to make share skill visible
+
+                _manageListingsEditComponent.EnterTitle(update.Title);
+                _manageListingsEditComponent.EnterDescription(update.Description);
+                _manageListingsEditComponent.SelectCategory(update.Category);
+                _manageListingsEditComponent.SelectSubCategory(update.SubCategory);
+
+                foreach (var tag in update.Tags)
+                {
+                    _manageListingsEditComponent.AddTag(tag);
+                }
+                _manageListingsEditComponent.SelectServiceType(update.ServiceType);
+                _manageListingsEditComponent.SelectLocationType(update.LocationType);
+
+                _manageListingsEditComponent.ClickCalendarAndSelectCurrentDate();
+                _manageListingsEditComponent.ClickWeekLink();
+                _manageListingsEditComponent.SelectSkillTradeType(update.SkillTradeType);
+
+                foreach (var skillTag in update.SkillExchangeTags)
+                {
+                    _manageListingsEditComponent.AddSkillExchangeTag(skillTag);
+                }
+
+                foreach (var workSample in update.WorkSamples)
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    _manageListingsEditComponent.UploadWorkSample(fullPath);
+                }
+
+                _manageListingsEditComponent.SetActiveStatus(update.Active);
+                _manageListingsEditComponent.ClickSave();
+                var updateSuccessMessage = _manageListingsEditComponent.GetSuccessMessage();
+                Console.WriteLine($"Message:{updateSuccessMessage}");
+                _state.ActualManageListingsEdit.Add(updateSuccessMessage);
+                Thread.Sleep(6000);
+                var updatedErrorMessage = _manageListingsEditComponent.GetWorkSamplesErrorText();
+                Console.WriteLine($"Error message for worksamples:{updatedErrorMessage}");
+                _manageListingsEditComponent.ClickCancel();
+                _state.ExpectedManageListingsEdit.Add(update.ExpectedToastMessage);
+                _state.CleanupManageListingsEdit.Add(update.Title);
+            }
+        }
+
+        [When("I update the shared skill description with the numbers from the json file {string}")]
+        public void WhenIUpdateTheSharedSkillDescriptionWithTheNumbersFromTheJsonFile(string fileName)
+        {
+            var shareSkillsDetails = JsonHelper.ReadJson<ShareSkillModel>($"TestData/{fileName}");
+
+            for (int i = 0; i < shareSkillsDetails.ShareSkills.Count; i++)
+            {
+                var add = shareSkillsDetails.ShareSkills[i];
+                var update = shareSkillsDetails.EditShareSkills[i];
+
+                _manageListingsEditComponent.AddShareSkills(add);
+                var successMessage = _manageListingsEditComponent.GetSuccessMessage();
+                Console.WriteLine($"Pop up Message:{successMessage}");
+                _manageListingsEditComponent.ClickCancel();
+
+                _manageListingsEditComponent.ClickManageListingsLink();
+                _manageListingsEditComponent.ClickEditIcon(add.Title);
+
+                _manageListingsEditComponent.ScrollToCenterOfThePage();
+                _manageListingsEditComponent.UpdateShareSkills(update);
+                var updateSuccessMessage = _manageListingsEditComponent.GetSuccessMessage();
+                Console.WriteLine($"Message:{updateSuccessMessage}");
+                _state.ActualManageListingsEdit.Add(updateSuccessMessage);
+                Thread.Sleep(6000);
+                var updatedErrorMessage = _manageListingsEditComponent.GetWorkSamplesErrorText();
+                Console.WriteLine($"Error message for worksamples:{updatedErrorMessage}");
+                _manageListingsEditComponent.ClickCancel();
+                _state.ExpectedManageListingsEdit.Add(update.ExpectedToastMessage);
+                _state.CleanupManageListingsEdit.Add(update.Title);
+            }
+        }
+
+        [When("I update the shared skill description with first character as a white space from the json file {string}")]
+        public void WhenIUpdateTheSharedSkillDescriptionWithFirstCharacterAsAWhiteSpaceFromTheJsonFile(string fileName)
+        {
+            var shareSkillsDetails = JsonHelper.ReadJson<ShareSkillModel>($"TestData/{fileName}");
+
+            for (int i = 0; i < shareSkillsDetails.ShareSkills.Count; i++)
+            {
+                var add = shareSkillsDetails.ShareSkills[i];
+                var update = shareSkillsDetails.EditShareSkills[i];
+
+                _manageListingsEditComponent.AddShareSkills(add);
+                var successMessage = _manageListingsEditComponent.GetSuccessMessage();
+                Console.WriteLine($"Pop up Message:{successMessage}");
+                _manageListingsEditComponent.ClickCancel();
+
+                _manageListingsEditComponent.ClickManageListingsLink();
+                _manageListingsEditComponent.ClickEditIcon(add.Title);
+
+                _manageListingsEditComponent.ScrollToCenterOfThePage();
+                _manageListingsEditComponent.UpdateShareSkills(update);
+                var updateErrorMessage = _manageListingsEditComponent.GetErrorMessage();
+                Console.WriteLine($"Pop up Message:{updateErrorMessage}");
+                _state.ActualManageListingsEdit.Add(updateErrorMessage);
+                _state.ExpectedManageListingsEdit.Add(update.ExpectedToastMessage);
+                var fieldErrorText = _manageListingsEditComponent.GetTextOfTitleFieldErrorMessage();
+                Console.Write($"Field error message:{fieldErrorText}");
+                _state.ActualFieldMessagesForManageListingsEdit.Add(fieldErrorText);
+                _state.ExpectedFieldMessagesForManageListingsEdit.Add(update.ExpectedFieldErrorMessage);
+                _manageListingsEditComponent.ClickCancel();
+            }
+        }
+
+        [When("I update the shared skill description in the Manage listings from the json file {string}")]
+        public void WhenIUpdateTheSharedSkillDescriptionInTheManageListingsFromTheJsonFile(string fileName)
+        {
+            var shareSkillsDetails = JsonHelper.ReadJson<ShareSkillModel>($"TestData/{fileName}");
+
+            for (int i = 0; i < shareSkillsDetails.ShareSkills.Count; i++)
+            {
+                var add = shareSkillsDetails.ShareSkills[i];
+                var update = shareSkillsDetails.EditShareSkills[i];
+
+                _manageListingsEditComponent.AddShareSkills(add);
+                var successMessage = _manageListingsEditComponent.GetSuccessMessage();
+                Console.WriteLine($"Pop up Message:{successMessage}");
+               
+                _manageListingsEditComponent.ClickManageListingsLink();
+                _manageListingsEditComponent.ClickEditIcon(add.Title);
+
+                _manageListingsEditComponent.ScrollToCenterOfThePage();
+                _manageListingsEditComponent.UpdateShareSkills(update);
+                var updateSuccessMessage = _manageListingsEditComponent.GetSuccessMessage();
+                Console.WriteLine($"Message:{updateSuccessMessage}");
+                _state.ActualManageListingsEdit.Add(updateSuccessMessage);
+                Thread.Sleep(6000);
+                var updatedErrorMessage = _manageListingsEditComponent.GetWorkSamplesErrorText();
+                Console.WriteLine($"Error message for worksamples:{updatedErrorMessage}");
+                _manageListingsEditComponent.ClickCancel();
+                _state.ExpectedManageListingsEdit.Add(update.ExpectedToastMessage);
+                _state.CleanupManageListingsEdit.Add(update.Title);
+            }
+        }
 
         [Then("the user should see the error message")]
         public void ThenTheUserShouldSeeTheErrorMessage()

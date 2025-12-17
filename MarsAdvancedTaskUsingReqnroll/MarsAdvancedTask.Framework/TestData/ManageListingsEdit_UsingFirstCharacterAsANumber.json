@@ -27,7 +27,7 @@
           "Playwright",
           "Cypress"
         ],
-        "WorkSamples": [],
+        "WorkSamples": ["TestData\\Scrum.jpg"],
         "Active": "true",
         "ExpectedToastMessage": "Service Listing Added successfully",
         "ExpectedToastContains": null,
@@ -62,7 +62,7 @@
           "Communication",
           "Language"
         ],
-        "WorkSamples": [],
+        "WorkSamples": ["TestData\\Scrum.jpg"],
         "Active": "true",
         "ExpectedToastMessage": "Service Listing Updated successfully",
         "ExpectedToastContains": null,

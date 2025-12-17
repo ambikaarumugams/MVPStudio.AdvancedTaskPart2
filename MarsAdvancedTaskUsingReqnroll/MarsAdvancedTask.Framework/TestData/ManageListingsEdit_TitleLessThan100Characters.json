@@ -1,7 +1,7 @@
 {
     "ShareSkills": [
       {
-        "Title": "Katalon1",
+        "Title": "Katalon2",
         "Description": "Katalon Studio",
         "Category": "Test Automation",
         "SubCategory": "Other",
@@ -27,7 +27,7 @@
           "Playwright",
           "Cypress"
         ],
-        "WorkSamples": [ "TestData\\DevOps.png" ],
+        "WorkSamples": [ "TestData\\GitHub.pdf" ],
         "Active": "true",
         "ExpectedToastMessage": "Service Listing Added successfully",
         "ExpectedToastContains": null,
@@ -35,8 +35,8 @@
       }
     ],
     "EditShareSkills": [
-        {
-            "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Repor",
+       {
+            "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Analy",
             "Description": "Comprehensive Power BI training covering data preparation modeling DAX queries dashboards and reports for business insights",
             "Category": "Data Analysis & Business Intelligence",
             "SubCategory": "PowerBI",
@@ -53,7 +53,7 @@
                     "EndDateTime": "25/30/2025 05:00PM",
                     "Repeat": "Weekly",
                     "Description": "Business Intelligence",
-                    "Owner": "Alex"
+                    "Owner": "Charlie"
                 }
             ],
             "SkillTradeType": "Skill-exchange",
@@ -62,7 +62,7 @@
                 "API",
                 "Postman"
             ],
-          "WorkSamples": ["TestData\\DevOps.png"],
+        "WorkSamples": [ "TestData\\GitHub.pdf" ],
             "Active": "true",
             "ExpectedToastMessage": "Service Listing Updated successfully",
             "ExpectedToastContains": null,

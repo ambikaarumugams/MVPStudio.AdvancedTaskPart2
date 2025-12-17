@@ -27,7 +27,7 @@
         "AI",
         "Testing"
       ],
-      "WorkSamples": [],
+      "WorkSamples": ["TestData\\TA - Week 1 - Day 1 Slides.pdf"],
       "Active": "true",
       "ExpectedToastMessage": "Invalid Title",
       "ExpectedToastContains": null,
@@ -62,7 +62,7 @@
         "AI",
         "Testing"
       ],
-      "WorkSamples": [],
+      "WorkSamples": ["TestData\\TA - Week 1 - Day 1 Slides.pdf"],
       "Active": "true",
       "ExpectedToastMessage": "Invalid Title",
       "ExpectedToastContains": null,

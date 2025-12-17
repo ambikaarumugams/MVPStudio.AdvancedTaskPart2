@@ -1,0 +1,7 @@
+Read blogs, follow testing leaders, attend online QA meetups (e.g., Ministry of Testing, TestGuild).
+
+https://www.tutorialspoint.com/csharp/csharp_classes.htm
+
+
+https://www.geeksforgeeks.org/system-design/software-design-patterns/
+

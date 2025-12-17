@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <None Remove="settings.json" />
+    <None Remove="TestData\ActionClass.txt" />
     <None Remove="TestData\AddCertificationDetails_Cancel.json" />
     <None Remove="TestData\AddCertificationDetails_CertificateOrAwardAndCertificateMismatch.json" />
     <None Remove="TestData\AddCertificationDetails_DestructiveTesting.json" />
@@ -43,6 +44,8 @@
     <None Remove="TestData\ChangePassword_Valid.json" />
     <None Remove="TestData\ChangePassword_WeakPassword.json" />
     <None Remove="TestData\ChangePassword_WhenSessionHasExpired.json" />
+    <None Remove="TestData\compile,runtime,exceptionhandling.txt" />
+    <None Remove="TestData\Day-1.txt" />
     <None Remove="TestData\DeleteCertificationDetails_ValidInput.json" />
     <None Remove="TestData\DeleteCertificationDetails_WhenSessionExpired.json" />
     <None Remove="TestData\DeleteEducationDetails_ValidInput.json" />
@@ -58,8 +61,19 @@
     <None Remove="TestData\Description_UsingSpace.json" />
     <None Remove="TestData\Description_UsingSpecialCharacters.json" />
     <None Remove="TestData\Description_ValidInput.json" />
+    <None Remove="TestData\DevOps.png" />
+    <None Remove="TestData\GitHub.pdf" />
+    <None Remove="TestData\LinksTostudy.txt" />
     <None Remove="TestData\LoginData.json" />
+    <None Remove="TestData\manageListingsEdit_DescriptionHas600characters.json" />
+    <None Remove="TestData\ManageListingsEdit_DescriptionHasLessThan600Characters.json" />
+    <None Remove="TestData\ManageListingsEdit_DescriptionWithNumbers.json" />
+    <None Remove="TestData\ManageListingsEdit_DescriptionWithSpaceAsFirstCharacter.json" />
+    <None Remove="TestData\ManageListingsEdit_DescriptionWithSpecialCharacters.json" />
+    <None Remove="TestData\ManageListingsEdit_DescritionWithRandomStrings.json" />
     <None Remove="TestData\ManageListingsEdit_Title100Characters.json" />
+    <None Remove="TestData\ManageListingsEdit_TitleLessThan100Characters.json" />
+    <None Remove="TestData\ManageListingsEdit_TitleMoreThan100Characters.json" />
     <None Remove="TestData\ManageListingsEdit_UsingCreditValidInput.json" />
     <None Remove="TestData\ManageListingsEdit_UsingFirstCharacterAsANumber.json" />
     <None Remove="TestData\ManageListingsEdit_UsingFirstCharacterAsAWhiteSpace.json" />
@@ -68,6 +82,8 @@
     <None Remove="TestData\ManageListingsView.json" />
     <None Remove="TestData\SampleTextFile.txt" />
     <None Remove="TestData\SampleWord.docx" />
+    <None Remove="TestData\Scrum.jpg" />
+    <None Remove="TestData\sdlc_stages.jpg" />
     <None Remove="TestData\ShareSkill_AddEvents.json" />
     <None Remove="TestData\ShareSkill_BoundaryCheckForDescriptionLessThan600Characters.json" />
     <None Remove="TestData\ShareSkill_BoundaryCheckForDescriptionMoreThan600Characters.json" />
@@ -93,13 +109,21 @@
     <None Remove="TestData\ShareSkill_ServiceLocationType.json" />
     <None Remove="TestData\ShareSkill_UsingCreditValidInput.json" />
     <None Remove="TestData\ShareSkill_WorkSamples.json" />
+    <None Remove="TestData\Software_Testing_Life_Cycle_STLC.png" />
+    <None Remove="TestData\STLC.png" />
+    <None Remove="TestData\TA - Week 1 - Day 1 Slides.pdf" />
+    <None Remove="TestData\TA - Week 1 - Day 2 Slides.pdf" />
     <None Remove="TestData\TestAutomation.jpg" />
     <None Remove="TestData\test_analyst_programme.mp4" />
+    <None Remove="TestData\What is DevOps.pdf" />
     <None Remove="TestData\Yoga.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ActionClass.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\AddCertificationDetails_Cancel.json">
@@ -210,6 +234,12 @@
     <Content Include="TestData\ChangePassword_WhenSessionHasExpired.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\compile,runtime,exceptionhandling.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Day-1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\DeleteCertificationDetails_ValidInput.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -255,10 +285,43 @@
     <Content Include="TestData\Description_ValidInput.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\DevOps.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\GitHub.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\LinksTostudy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\LoginData.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\ManageListingsEdit_DescriptionHas600characters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_DescriptionHasLessThan600Characters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_DescriptionWithNumbers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_DescriptionWithSpaceAsFirstCharacter.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_DescriptionWithSpecialCharacters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_DescritionWithRandomStrings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\ManageListingsEdit_Title100Characters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_TitleLessThan100Characters.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\ManageListingsEdit_TitleMoreThan100Characters.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\ManageListingsEdit_UsingCreditValidInput.json">
@@ -283,6 +346,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\SampleWord.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Scrum.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\sdlc_stages.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\ShareSkill_AddEvents.json">
@@ -360,10 +429,25 @@
     <Content Include="TestData\ShareSkill_WorkSamples.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="TestData\Software_Testing_Life_Cycle_STLC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\STLC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TA - Week 1 - Day 1 Slides.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\TA - Week 1 - Day 2 Slides.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestData\TestAutomation.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\test_analyst_programme.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\What is DevOps.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\Yoga.png">

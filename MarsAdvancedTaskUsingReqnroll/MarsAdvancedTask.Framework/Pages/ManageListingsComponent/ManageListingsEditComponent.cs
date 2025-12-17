@@ -76,7 +76,7 @@ namespace MarsAdvancedTask.Framework.Pages.ManageListingsComponent
         private readonly By _viewAddedSkills = By.XPath("//table[@class='ui striped table']//tbody/tr[1]//button[i[contains(@class,'eye icon')]]");
         private readonly By _serviceTypeFromAddedSkills = By.XPath("//div[@class='content'][div[@class='header' and text()='Service Type']]/div[@class='description']");
         private readonly By _locationTypeFromAddedSkills = By.XPath("//div[@class='content'][div[@class='header' and text()='Location Type']]/div[@class='description']");
-      //  private readonly By _editIconElements = By.XPath("//tbody/tr/td[8]/div/button[@class='ui button']/i[contains(@class,'outline write icon')]");
+        //  private readonly By _editIconElements = By.XPath("//tbody/tr/td[8]/div/button[@class='ui button']/i[contains(@class,'outline write icon')]");
 
         //Action Methods
         public void NavigateToTheProfilePage()
@@ -280,7 +280,6 @@ namespace MarsAdvancedTask.Framework.Pages.ManageListingsComponent
         {
             try
             {
-                Thread.Sleep(5000);
                 var successMessage = _state.Wait.WaitUntilElementIsVisible(By.XPath("//div[@class='ns-box ns-growl ns-effect-jelly ns-type-success ns-show']"));
                 return successMessage.Text;
             }
@@ -758,9 +757,83 @@ namespace MarsAdvancedTask.Framework.Pages.ManageListingsComponent
                 {
                     var editIcon = row.FindElement(By.XPath(".//i[contains(@class,'write icon')]"));
                     editIcon.Click();
-                    break;   
+                    break;
                 }
             }
+        }
+
+        public void AddShareSkills(Models.ShareSkillDetails skill)
+        {
+            ScrollToCenterOfThePage();
+            ClickShareSkill();
+            EnterTitle(skill.Title);
+            EnterDescription(skill.Description);
+            SelectCategory(skill.Category);
+            SelectSubCategory(skill.SubCategory);
+            foreach (var tag in skill.Tags)
+            {
+                AddTag(tag);
+            }
+
+            SelectServiceType(skill.ServiceType);
+            SelectLocationType(skill.LocationType);
+
+            ClickCalendarAndSelectCurrentDate();
+            ClickWeekLink();
+            SelectSkillTradeType(skill.SkillTradeType);
+
+            foreach (var skillTag in skill.SkillExchangeTags)
+            {
+                AddSkillExchangeTag(skillTag);
+            }
+
+            foreach (var workSample in skill.WorkSamples)
+            {
+                var fullPath = Path.GetFullPath(workSample);
+                if (!File.Exists(fullPath))
+                {
+                    throw new FileNotFoundException("File not found:" + fullPath);
+                }
+                UploadWorkSample(fullPath);
+            }
+            SetActiveStatus(skill.Active);
+            ClickSave();
+        }
+
+        public void UpdateShareSkills(Models.ShareSkillDetails skillToUpdate)
+        {
+            EnterTitle(skillToUpdate.Title);
+            EnterDescription(skillToUpdate.Description);
+            SelectCategory(skillToUpdate.Category);
+            SelectSubCategory(skillToUpdate.SubCategory);
+            foreach (var tag in skillToUpdate.Tags)
+            {
+                AddTag(tag);
+            }
+
+            SelectServiceType(skillToUpdate.ServiceType);
+            SelectLocationType(skillToUpdate.LocationType);
+
+            ClickCalendarAndSelectCurrentDate();
+            ClickWeekLink();
+            SelectSkillTradeType(skillToUpdate.SkillTradeType);
+
+            foreach (var skillTag in skillToUpdate.SkillExchangeTags)
+            {
+                AddSkillExchangeTag(skillTag);
+            }
+
+            foreach (var workSample in skillToUpdate.WorkSamples)
+            {
+                var fullPath = Path.GetFullPath(workSample);
+                if (!File.Exists(fullPath))
+                {
+                    throw new FileNotFoundException("File not found:" + fullPath);
+                }
+                UploadWorkSample(fullPath);
+            }
+            SetActiveStatus(skillToUpdate.Active);
+            ClickSave();
         }
     }
 }

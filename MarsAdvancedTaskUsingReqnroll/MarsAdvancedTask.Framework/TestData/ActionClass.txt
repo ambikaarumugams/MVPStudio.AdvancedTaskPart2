@@ -1,0 +1,78 @@
+Got it 👍 You’re asking about **Action methods in Selenium (C#)**.
+
+In Selenium WebDriver, **Actions class** (in `OpenQA.Selenium.Interactions`) is used to handle **complex user interactions** like mouse movements, keyboard actions, drag-and-drop, double click, right click, etc.
+
+---
+
+## 🔑 Steps
+
+1. Create an instance of `Actions` class using the driver.
+2. Call the required action method (like `ClickAndHold`, `MoveToElement`, `SendKeys`, etc.).
+3. Always call `.Perform()` at the end to execute the built sequence.
+
+---
+
+## Common Action Methods in Selenium C\#
+
+### 1. **Click and Hold**
+
+```csharp
+IWebElement element = driver.FindElement(By.Id("source"));
+Actions actions = new Actions(driver);
+actions.ClickAndHold(element).Perform();
+```
+
+### 2. **Release (drop)**
+
+```csharp
+IWebElement element = driver.FindElement(By.Id("target"));
+actions.Release(element).Perform();
+```
+
+### 3. **Drag and Drop**
+
+```csharp
+IWebElement source = driver.FindElement(By.Id("source"));
+IWebElement target = driver.FindElement(By.Id("target"));
+actions.DragAndDrop(source, target).Perform();
+```
+
+### 4. **Move to Element (hover)**
+
+```csharp
+IWebElement menu = driver.FindElement(By.Id("menu"));
+actions.MoveToElement(menu).Perform();  // hover action
+```
+
+### 5. **Double Click**
+
+```csharp
+IWebElement button = driver.FindElement(By.Id("btn"));
+actions.DoubleClick(button).Perform();
+```
+
+### 6. **Right Click (Context Click)**
+
+```csharp
+IWebElement element = driver.FindElement(By.Id("btn"));
+actions.ContextClick(element).Perform();
+```
+
+### 7. **Send Keys with Actions**
+
+```csharp
+actions.SendKeys(Keys.Enter).Perform();
+actions.KeyDown(Keys.Control).SendKeys("a").KeyUp(Keys.Control).Perform();
+```
+
+---
+
+## ✅ Summary
+
+* **`Actions` class** in Selenium C# lets you simulate **advanced user interactions**.
+* Chain multiple actions before `.Perform()` to execute them in sequence.
+* Common methods: `ClickAndHold`, `Release`, `MoveToElement`, `DragAndDrop`, `DoubleClick`, `ContextClick`, `SendKeys`, `KeyDown`, `KeyUp`.
+
+---
+
+👉 Do you want me to make you a **cheat sheet table** of all Selenium Action methods in C# with short examples (like quick reference for your framework)?
