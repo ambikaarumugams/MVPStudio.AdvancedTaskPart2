@@ -1,6 +1,5 @@
 ﻿using MarsAdvancedTask.Framework.Helpers;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 
 namespace MarsAdvancedTask.Framework.Pages
 {
@@ -20,7 +19,6 @@ namespace MarsAdvancedTask.Framework.Pages
         private readonly By _newPasswordElement = By.XPath("//input[@placeholder='New Password']");
         private readonly By _confirmPasswordElement = By.XPath("//input[@placeholder='Confirm Password']");
         private readonly By _saveButtonElement = By.XPath("//button[@role='button']");
-
         private readonly By _successMessageElement = By.XPath("//div[@class='ns-box ns-growl ns-effect-jelly ns-type-success ns-show']");
         private readonly By _errorMessageElement = By.XPath("//div[@class='ns-box ns-growl ns-effect-jelly ns-type-error ns-show']");
 

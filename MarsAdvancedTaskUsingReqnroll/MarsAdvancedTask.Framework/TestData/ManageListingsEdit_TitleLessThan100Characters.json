@@ -1,72 +1,72 @@
 {
-    "ShareSkills": [
-      {
-        "Title": "Katalon2",
-        "Description": "Katalon Studio",
-        "Category": "Test Automation",
-        "SubCategory": "Other",
-        "Tags": [
-          "Automation",
-          "Katalon"
-        ],
-        "ServiceType": "1",
-        "LocationType": "1",
-        "Events": [
-          {
-            "Title": "Katalon",
-            "StartDateTime": "10/20/2025 10:30 AM",
-            "EndDateTime": "25/30/2025 05:00PM",
-            "Repeat": "Weekly",
-            "Description": "Learn to understand the concepts of Katalon",
-            "Owner": "Bob"
-          }
-        ],
-        "SkillTradeType": "Skill-exchange",
-        "Credit": null,
-        "SkillExchangeTags": [
-          "Playwright",
-          "Cypress"
-        ],
-        "WorkSamples": [ "TestData\\GitHub.pdf" ],
-        "Active": "true",
-        "ExpectedToastMessage": "Service Listing Added successfully",
-        "ExpectedToastContains": null,
-        "ExpectedFieldErrorMessage": null
-      }
-    ],
-    "EditShareSkills": [
-       {
-            "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Analy",
-            "Description": "Comprehensive Power BI training covering data preparation modeling DAX queries dashboards and reports for business insights",
-            "Category": "Data Analysis & Business Intelligence",
-            "SubCategory": "PowerBI",
-            "Tags": [
-                "PowerBI",
-                "Data Analysis"
-            ],
-            "ServiceType": "0",
-            "LocationType": "1",
-            "Events": [
-                {
-                    "Title": "Power BI",
-                    "StartDateTime": "10/20/2025 10:30 AM",
-                    "EndDateTime": "25/30/2025 05:00PM",
-                    "Repeat": "Weekly",
-                    "Description": "Business Intelligence",
-                    "Owner": "Charlie"
-                }
-            ],
-            "SkillTradeType": "Skill-exchange",
-            "Credit": null,
-            "SkillExchangeTags": [
-                "API",
-                "Postman"
-            ],
-        "WorkSamples": [ "TestData\\GitHub.pdf" ],
-            "Active": "true",
-            "ExpectedToastMessage": "Service Listing Updated successfully",
-            "ExpectedToastContains": null,
-            "ExpectedFieldErrorMessage": null
+  "ShareSkills": [
+    {
+      "Title": "Katalon2",
+      "Description": "Katalon Studio",
+      "Category": "Test Automation",
+      "SubCategory": "Other",
+      "Tags": [
+        "Automation",
+        "Katalon"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Katalon",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the concepts of Katalon",
+          "Owner": "Bob"
         }
-    ]
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [ "TestData\\GitHub.pdf" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Analy",
+      "Description": "Comprehensive Power BI training covering data preparation modeling DAX queries dashboards and reports for business insights",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "API",
+        "Postman"
+      ],
+      "WorkSamples": [ "TestData\\GitHub.pdf" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Updated successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
 }

@@ -23,7 +23,7 @@ namespace MarsAdvancedTask.Framework.Pages
         private readonly By _characterRemainingElement = By.XPath("//p[contains(text(), 'Characters remaining')]");
         private readonly By _successMessageElement = By.XPath("//div[@class='ns-box ns-growl ns-effect-jelly ns-type-success ns-show']");
         private readonly By _errorMessageElement = By.XPath("//div[@class='ns-box ns-growl ns-effect-jelly ns-type-error ns-show']");
-     
+
         //Action Methods
         public void NavigateToTheProfilePage()
         {

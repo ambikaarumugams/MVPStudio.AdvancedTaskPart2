@@ -1,73 +1,73 @@
 {
-    "ShareSkills": [
+  "ShareSkills": [
+    {
+      "Title": "Introduction to Data Science and AI for Beginners",
+      "Description": "Learn how data science techniques are applied to big data environments This course covers the fundamentals of distributed data storage parallel processing and analytics using tools such as Hadoop Spark and Hive Students will gain hands on experience building scalable pipelines and applying machine learning models to large datasets",
+      "Category": "Data Science",
+      "SubCategory": "Big Data",
+      "Tags": [
+        "data",
+        "storage",
+        "tools"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
         {
-            "Title": "Introduction to Data Science and AI for Beginners",
-            "Description": "Learn how data science techniques are applied to big data environments This course covers the fundamentals of distributed data storage parallel processing and analytics using tools such as Hadoop Spark and Hive Students will gain hands on experience building scalable pipelines and applying machine learning models to large datasets",
-            "Category": "Data Science",
-            "SubCategory": "Big Data",
-            "Tags": [
-                "data",
-                "storage",
-                "tools"
-            ],
-            "ServiceType": "0",
-            "LocationType": "1",
-            "Events": [
-                {
-                    "Title": "Data Science and AI",
-                    "StartDateTime": "10/20/2025 10:30 AM",
-                    "EndDateTime": "25/30/2025 05:00PM",
-                    "Repeat": "Never",
-                    "Description": "Learn how data science techniques are applied to big data environments",
-                    "Owner": "Charlie"
-                }
-            ],
-            "SkillTradeType": "Skill-exchange",
-            "Credit": null,
-            "SkillExchangeTags": [
-                "API",
-                "Postman"
-            ],
-          "WorkSamples": [],
-            "Active": "true",
-            "ExpectedToastMessage": "Service Listing Added successfully",
-            "ExpectedToastContains": null,
-            "ExpectedFieldErrorMessage": null
+          "Title": "Data Science and AI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Learn how data science techniques are applied to big data environments",
+          "Owner": "Charlie"
         }
-    ],
-    "EditShareSkills": [
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "API",
+        "Postman"
+      ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Reports",
+      "Description": "Comprehensive Power BI training covering data preparation modeling DAX queries dashboards and reports for business insights",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
         {
-            "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Reports",
-            "Description": "Comprehensive Power BI training covering data preparation modeling DAX queries dashboards and reports for business insights",
-            "Category": "Data Analysis & Business Intelligence",
-            "SubCategory": "PowerBI",
-            "Tags": [
-                "PowerBI",
-                "Data Analysis"
-            ],
-            "ServiceType": "0",
-            "LocationType": "1",
-            "Events": [
-                {
-                    "Title": "Power BI",
-                    "StartDateTime": "10/20/2025 10:30 AM",
-                    "EndDateTime": "25/30/2025 05:00PM",
-                    "Repeat": "Weekly",
-                    "Description": "Business Intelligence",
-                    "Owner": "Charlie"
-                }
-            ],
-            "SkillTradeType": "Skill-exchange",
-            "Credit": null,
-            "SkillExchangeTags": [
-                "API",
-                "Postman"
-            ],
-          "WorkSamples": [ "TestData\\sdlc_stages.jpg" ],
-            "Active": "true",
-            "ExpectedToastMessage": "Invalid Title",
-            "ExpectedToastContains": null,
-            "ExpectedFieldErrorMessage": null
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
         }
-    ]
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "API",
+        "Postman"
+      ],
+      "WorkSamples": [ "TestData\\sdlc_stages.jpg" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Invalid Title",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
 }

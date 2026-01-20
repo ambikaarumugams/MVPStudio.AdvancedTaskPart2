@@ -24,7 +24,7 @@
       "SkillTradeType": "Skill-exchange",
       "Credit": null,
       "SkillExchangeTags": [ "API", "Postman" ],
-      "WorkSamples": ["TestData\\compile,runtime,exceptionhandling.txt"],
+      "WorkSamples": [ "TestData\\compile,runtime,exceptionhandling.txt" ],
       "Active": "true",
       "ExpectedToastMessage": "Service Listing Added successfully",
       "ExpectedToastContains": null,
@@ -60,7 +60,7 @@
         "AI",
         "Testing"
       ],
-      "WorkSamples": ["TestData\\compile,runtime,exceptionhandling.txt"],
+      "WorkSamples": [ "TestData\\compile,runtime,exceptionhandling.txt" ],
       "Active": "true",
       "ExpectedToastMessage": "Please complete the form correctly.",
       "ExpectedToastContains": null,

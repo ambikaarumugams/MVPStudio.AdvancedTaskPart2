@@ -1,0 +1,9 @@
+Playwright with JavaScript is a powerful combination for cross-browser web automation and end-to-end testing.
+It provides a single API to automate Chromium, Firefox, and WebKit browsers, and offers robust features like auto-waiting, mobile emulation, and powerful debugging tools. 
+Key Features
+Cross-Browser and Cross-Platform: Test across all modern browsers (Chrome, Firefox, Safari, Edge) on Windows, Linux, and macOS.
+Auto-Waiting: Playwright automatically waits for elements to be ready (visible, clickable, etc.) before performing actions, which eliminates flakiness and the need for manual timeouts.
+Web-First Assertions: Built-in expect assertions automatically retry until the condition is met or a timeout is reached, making tests more stable for dynamic web pages.
+Powerful Tooling: Includes the Playwright Inspector for debugging, the Trace Viewer for detailed test analysis (with video and live DOM snapshots), and Codegen to generate tests by recording user actions.
+Full Isolation: Uses isolated browser contexts for each test, which is like a fresh browser profile, ensuring zero test side-effects with minimal overhead.
+API Testing: You can perform API testing directly within your E2E tests, sharing authentication states and cookies between UI and API requests. 

@@ -1,0 +1,41 @@
+ 🗓️ **Week 1 – Core Setup & Fundamentals**
+
+### ✅ **Day 1: NUnit Basics**
+
+* Understand `[Test]`, `[TestFixture]`, `[SetUp]`, `[TearDown]`
+* Write 2 simple test cases using `Assert`
+
+### ✅ **Day 2: Selenium WebDriver Basics**
+
+* Setup Selenium WebDriver (Chrome)
+* Open browser, navigate, find elements
+* Practice simple login test
+
+### ✅ **Day 3: Page Object Model (POM)**
+
+* Create your first Page class (e.g., `LoginPage`)
+* Create reusable methods like `EnterUsername()`, `ClickLogin()`
+* Use the page from your test
+
+### ✅ **Day 4: WaitHelper + Element Handling**
+
+* Create `WaitHelper` using `WebDriverWait`
+* Add `WaitUntilVisible`, `WaitUntilClickable`
+* Use these waits inside your POM
+
+### ✅ **Day 5: WebDriverFactory + TestBase**
+
+* Build `WebDriverFactory` for Chrome, Edge, etc.
+* Create `TestBase` to initialize/quit driver
+* Move browser setup out of tests
+
+### ✅ **Day 6: TestState Pattern**
+
+* Create `TestState` to hold driver, wait, test data, helpers
+* Inject `TestState` into Page and Helper classes
+* Make framework more scalable
+
+### ✅ **Day 7: Review + Practice**
+
+* Refactor and clean up code
+* Make all tests use `TestState` and `TestBase`

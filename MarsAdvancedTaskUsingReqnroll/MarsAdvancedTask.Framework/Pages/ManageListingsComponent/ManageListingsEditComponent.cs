@@ -1,8 +1,8 @@
 ﻿using AventStack.ExtentReports;
 using MarsAdvancedTask.Framework.Helpers;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium;
 
 namespace MarsAdvancedTask.Framework.Pages.ManageListingsComponent
 {
@@ -21,52 +21,27 @@ namespace MarsAdvancedTask.Framework.Pages.ManageListingsComponent
         private readonly By _titleTextField = By.XPath("//input[@placeholder='Write a title to describe the service you provide.']");
         private readonly By _descriptionTextField = By.XPath("//textarea[@placeholder='Please tell us about any hobbies, additional expertise, or anything else you’d like to add.']");
         private readonly By _tagsInputBox = By.XPath("//div[@class='ReactTags__tagInput']/input[contains(@aria-label,'Add new tag')]");
-        private readonly By _calendar = By.XPath("//a[@class='k-link']//span[@class='k-icon k-i-calendar']");
         private readonly By _previousArrowToSelectPastDate = By.XPath("//a[@class='k-link k-nav-prev']");
         private readonly By _nextArrowToSelectFutureDate = By.XPath("//a[@class='k-link k-nav-next']");
         private readonly By _calendarHeader = By.XPath("//div[contains(@class,'k-scheduler-calendar')]//a[contains(@class,'k-link') and contains(@class,'k-nav-fast')]");
         private readonly By _selectCategory = By.XPath("//select[@name='categoryId']");
         private readonly By _selectSubCategory = By.XPath("//select[@name='subcategoryId']");
-
-        private readonly By _workWeekTab = By.XPath("//li[contains(@class,'k-current-view')]//a[contains(@role,'button')][normalize-space()='Work Week']");
-        private readonly By _dayLink = By.XPath("//a[normalize-space()='Day']");
         private readonly By _workWeekLink = By.XPath("//li[contains(@class,'k-state-default k-view-workweek k-state-selected')]//a[contains(@role,'button')][normalize-space()='Work Week']");
         private readonly By _weekLink = By.XPath("//a[normalize-space()='Week']");
-        private readonly By _monthLink = By.XPath("//a[normalize-space()='Month']");
-        private readonly By _agendaLink = By.XPath("//a[normalize-space()='Agenda']");
-        private readonly By _timeLineLink = By.XPath("//a[normalize-space()='Timeline']");
         private readonly By _eventTitle = By.XPath("//input[@title='Title']");
-        private readonly By _startDate = By.XPath("//div[@data-container-for='start']//span[@class='k-widget k-datetimepicker k-header']//span[@class='k-icon k-i-calendar']");
-        private readonly By _startDateTime = By.XPath("//div[@data-container-for='start']//span[@class='k-icon k-i-clock']");
-        private readonly By _endDate = By.XPath("//div[@data-container-for='end']//span[@class='k-widget k-datetimepicker k-header']//span[@class='k-icon k-i-calendar']");
-        private readonly By _endDateTime = By.XPath("//div[@data-container-for='end']//span[@class='k-icon k-i-clock']");
-        private readonly By _selectDateInsideEventCreator = By.XPath("//td[contains(@id,'_cell')]//a[@title='{fullDateTitle}' and normalize-space(text())='{day}']");
-        private readonly By _alertMessage = By.XPath("//div[@role='alert']");
         private readonly By _allDayEventCheckBox = By.XPath("//input[@title='All day event']");
-        private readonly By _repeatEveryTextBox = By.XPath("//input[@class='k-recur-interval k-input']");
         private readonly By _repeatEveryDaysUpArrow = By.XPath("//span[@class='k-numeric-wrap k-state-default']//span[@class='k-icon k-i-arrow-60-up']");
-        private readonly By _repeatEveryDaysDownArrow = By.XPath("//span[@class='k-numeric-wrap k-state-default']//span[@class='k-icon k-i-arrow-60-down']");
         private readonly By _endNeverRadioButton = By.XPath("//input[@value='never']");
-        private readonly By _endAfterNOcuurencesRadioButton = By.XPath("//input[@value='count']");
-        private readonly By _occurenceUpArrow = By.XPath("//span[@class='k-widget k-numerictextbox k-recur-count']//span[@class='k-icon k-i-arrow-60-up']");
-        private readonly By _occurenceDownArrow = By.XPath("//span[@class='k-widget k-numerictextbox k-recur-count']//span[@class='k-icon k-i-arrow-60-down']");
         private readonly By _endOnRadioButton = By.XPath("//input[@value='until']");
         private readonly By _endOnDateTextBox = By.XPath("//input[@title='On ']");
-
-        private readonly By _repeatEveryForWeeklyTextBox = By.XPath("//input[@class='k-formatted-value k-recur-interval k-input']");
-        private readonly By _repeatDownArrow = By.XPath("//span[@title='Recurrence editor']//span[@class='k-icon k-i-arrow-60-down']");
         private readonly By _descriptionTextBoxInsideEvent = By.XPath("//textarea[@title='Description']");
-        private readonly By _ownerTextBoxArrow = By.XPath("//span[@title='No title']//span[@class='k-icon k-i-arrow-60-down']");
         private readonly By _saveEventButton = By.XPath("//a[normalize-space()='Save']");
         private readonly By _cancelEventButton = By.XPath("//a[normalize-space()='Cancel']");
-        private readonly By _showBusinessHoursTab = By.XPath("//a[normalize-space()='Show business hours']");
         private readonly By _skillExchangeTagInputBox = By.XPath("//div[contains(@class,'twelve wide column')]//div[contains(@class,'')]//div[contains(@class,'form-wrapper')]//input[contains(@placeholder,'Add new tag')]");
         private readonly By _creditTextBox = By.XPath("//input[@placeholder='Amount']");
-        private readonly By _workSamplesIcon = By.XPath("//i[@class='huge plus circle icon padding-25']");
         private readonly By _saveButton = By.XPath("//input[@value='Save']");
         private readonly By _cancelButton = By.XPath("//input[@value='Cancel']");
         private readonly By _titleFieldError = By.XPath("//div[@class='ui basic red prompt label transition visible']");
-        private readonly By _descriptionFieldErrorForSpecialCharacters = By.XPath("//div[normalize-space()='Special characters are not allowed.']");
         private readonly By _descriptionFieldError = By.XPath("//div[normalize-space()='Description is required']");
         private readonly By _categoryFieldError = By.XPath("//div[normalize-space()='Category is required']");
         private readonly By _tagsFieldError = By.XPath("//div[contains(text(),'Tags are required')]");
@@ -481,56 +456,6 @@ namespace MarsAdvancedTask.Framework.Pages.ManageListingsComponent
             cancelButtonElement.Click();
         }
 
-        public void LeaveEitherOneOrAllRequiredFieldsEmpty(string? title, string? description, string? category,
-            string? subCategory, List<string>? tags, string? serviceType, string? locationType, string? skillTradeType,
-            string? credit, List<string>? skillExchangeTags, string? active)
-        {
-            if (!string.IsNullOrWhiteSpace(title))
-                EnterTitle(title.Trim());
-
-            if (!string.IsNullOrWhiteSpace(description))
-                EnterDescription(description.Trim());
-
-            if (!string.IsNullOrWhiteSpace(category))
-                SelectCategory(category.Trim());
-
-            if (!string.IsNullOrWhiteSpace(subCategory))
-                SelectSubCategory(subCategory.Trim());
-            foreach (var tag in tags)
-            {
-                if (!string.IsNullOrWhiteSpace(tag))
-                    AddTag(tag.Trim());
-            }
-
-            if (!string.IsNullOrWhiteSpace(serviceType))
-            {
-                SelectServiceType(serviceType); //true = "Hourly basis", false = "One-off"
-            }
-
-            if (!string.IsNullOrWhiteSpace(locationType))
-            {
-                SelectLocationType(locationType); //true = "On-site", false = "Online"
-            }
-
-            if (!string.IsNullOrWhiteSpace(skillTradeType))
-            {
-                SelectSkillTradeType(skillTradeType);
-            }
-
-            foreach (var skillExchangeTag in skillExchangeTags)
-            {
-                if (!string.IsNullOrWhiteSpace(skillExchangeTag))
-                {
-                    AddSkillExchangeTag(skillExchangeTag.Trim());
-                }
-            }
-
-            if (!string.IsNullOrWhiteSpace(active))
-            {
-                SetActiveStatus(active);
-            }
-        }
-
         public string GetTextOfFieldErrorMessageForCategory()
         {
             var categoryTextField = _state.Wait.WaitUntilElementIsVisible(_selectCategory);
@@ -834,6 +759,190 @@ namespace MarsAdvancedTask.Framework.Pages.ManageListingsComponent
             }
             SetActiveStatus(skillToUpdate.Active);
             ClickSave();
+        }
+
+        public void ClickRemoveButtonForSkillExchangeTags()
+        {
+            var clickRemoveSkillExchangeTags = _state.Driver.FindElements(By.XPath("//div[contains(@class,'twelve wide column')]//div[contains(@class,'')]//div[contains(@class,'form-wrapper')]//span//a"));
+
+            foreach (var skillTag in clickRemoveSkillExchangeTags)
+            {
+                skillTag.Click();
+            }
+        }
+
+        public void UpdateSkillExchangeTags(Models.ShareSkillDetails skillToUpdate)
+        {
+            EnterTitle(skillToUpdate.Title);
+            EnterDescription(skillToUpdate.Description);
+            SelectCategory(skillToUpdate.Category);
+            SelectSubCategory(skillToUpdate.SubCategory);
+            foreach (var tag in skillToUpdate.Tags)
+            {
+                AddTag(tag);
+            }
+
+            SelectServiceType(skillToUpdate.ServiceType);
+            SelectLocationType(skillToUpdate.LocationType);
+
+            ClickCalendarAndSelectCurrentDate();
+            ClickWeekLink();
+            SelectSkillTradeType(skillToUpdate.SkillTradeType);
+            ClickRemoveButtonForSkillExchangeTags();
+            foreach (var skillTag in skillToUpdate.SkillExchangeTags)
+            {
+                AddSkillExchangeTag(skillTag);
+            }
+
+            foreach (var workSample in skillToUpdate.WorkSamples)
+            {
+                var fullPath = Path.GetFullPath(workSample);
+                if (!File.Exists(fullPath))
+                {
+                    throw new FileNotFoundException("File not found:" + fullPath);
+                }
+                UploadWorkSample(fullPath);
+            }
+            SetActiveStatus(skillToUpdate.Active);
+            ClickSave();
+        }
+
+        public void ClickRemoveButtonForTags()
+        {
+            var clickRemoveTags = _state.Driver.FindElements(By.XPath("//div[@class='listing']/form[@class='ui form']/div[@class='tooltip-target ui grid']/div[@class='twelve wide column']/div[1]/div[1]/div[1]/span/a"));
+
+            foreach (var tag in clickRemoveTags)
+            {
+                tag.Click();
+            }
+        }
+        public void UpdateTags(Models.ShareSkillDetails skillToUpdate)
+        {
+            EnterTitle(skillToUpdate.Title);
+            EnterDescription(skillToUpdate.Description);
+            SelectCategory(skillToUpdate.Category);
+            SelectSubCategory(skillToUpdate.SubCategory);
+            ClickRemoveButtonForTags();
+            foreach (var tag in skillToUpdate.Tags)
+            {
+                AddTag(tag);
+            }
+
+            SelectServiceType(skillToUpdate.ServiceType);
+            SelectLocationType(skillToUpdate.LocationType);
+
+            ClickCalendarAndSelectCurrentDate();
+            ClickWeekLink();
+            SelectSkillTradeType(skillToUpdate.SkillTradeType);
+            foreach (var skillTag in skillToUpdate.SkillExchangeTags)
+            {
+                AddSkillExchangeTag(skillTag);
+            }
+
+            foreach (var workSample in skillToUpdate.WorkSamples)
+            {
+                var fullPath = Path.GetFullPath(workSample);
+                if (!File.Exists(fullPath))
+                {
+                    throw new FileNotFoundException("File not found:" + fullPath);
+                }
+                UploadWorkSample(fullPath);
+            }
+            SetActiveStatus(skillToUpdate.Active);
+            ClickSave();
+        }
+
+        public void LeaveEitherOneOrAllRequiredFieldsEmptyForUpdate(Models.ShareSkillDetails skillToUpdate)
+        {
+            var enterTitleTextBox = _state.Wait.WaitUntilElementToBeClickable(_titleTextField);
+            enterTitleTextBox.SendKeys(Keys.Control + "a" + Keys.Delete);
+            if (!string.IsNullOrWhiteSpace(skillToUpdate.Title))
+                EnterTitle(skillToUpdate.Title.Trim());
+
+            var enterDescriptionTextBox = _state.Wait.WaitUntilElementToBeClickable(_descriptionTextField);
+            enterDescriptionTextBox.SendKeys(Keys.Control + "a" + Keys.Delete);
+
+            if (!string.IsNullOrWhiteSpace(skillToUpdate.Description))
+                EnterDescription(skillToUpdate.Description.Trim());
+
+            //var selectCategory = _state.Wait.WaitUntilElementToBeClickable(_selectCategory);  //Not able to select the default value of category and subcategory
+            //SelectElement categoryDropDown = new SelectElement(selectCategory);
+
+            //if (!string.IsNullOrWhiteSpace(skillToUpdate.Category))
+            //{
+            //    categoryDropDown.SelectByText(skillToUpdate.Category);
+            //}
+            //else { categoryDropDown.SelectByIndex(0); }
+
+
+            //if (!string.IsNullOrWhiteSpace(skillToUpdate.SubCategory))
+            //{
+            //    categoryDropDown.SelectByText(skillToUpdate.SubCategory);
+            //}
+            //else
+            //{
+            //    categoryDropDown.SelectByIndex(0);
+            //}
+            ClickRemoveButtonForTags();
+            foreach (var tag in skillToUpdate.Tags)
+            {
+                if (!string.IsNullOrWhiteSpace(tag))
+                    AddTag(tag.Trim());
+            }
+
+            if (!string.IsNullOrWhiteSpace(skillToUpdate.ServiceType))
+            {
+                SelectServiceType(skillToUpdate.ServiceType); //true = "Hourly basis", false = "One-off"
+            }
+
+            if (!string.IsNullOrWhiteSpace(skillToUpdate.LocationType))
+            {
+                SelectLocationType(skillToUpdate.LocationType); //true = "On-site", false = "Online"
+            }
+            if (!string.IsNullOrWhiteSpace(skillToUpdate.SkillTradeType))
+            {
+                SelectSkillTradeType(skillToUpdate.SkillTradeType);
+            }
+
+            ClickRemoveButtonForSkillExchangeTags();
+            foreach (var skillExchangeTag in skillToUpdate.SkillExchangeTags)
+            {
+                if (!string.IsNullOrWhiteSpace(skillExchangeTag))
+                {
+                    AddSkillExchangeTag(skillExchangeTag.Trim());
+                }
+            }
+
+            foreach (var workSample in skillToUpdate.WorkSamples)
+            {
+                if (!string.IsNullOrWhiteSpace(workSample))
+                {
+                    var fullPath = Path.GetFullPath(workSample);
+                    if (!File.Exists(fullPath))
+                    {
+                        throw new FileNotFoundException("File not found:" + fullPath);
+                    }
+                    UploadWorkSample(fullPath);
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(skillToUpdate.Active))
+            {
+                SetActiveStatus(skillToUpdate.Active);
+            }
+            ClickSave();
+        }
+
+        public string GetFieldErrorForTags()
+        {
+            var error = _state.Driver.FindElement(By.XPath("//div[contains(text(),'Please enter a tag')]"));
+            return error.Text;
+        }
+
+        public string GetFieldErrorForSkillExchangeTags()
+        {
+            var error = _state.Driver.FindElement(By.XPath("//div[contains(text(),'Please, enter a tag')]"));
+            return error.Text;
         }
     }
 }

@@ -38,7 +38,7 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
             foreach (var testItem in scenario.TestItems)
             {
                 var certificationDetails = testItem.CertificationDetailsToAdd; //Add
-                _certificationsDeleteComponent.AddCertifications(certificationDetails.CertificateOrAward,certificationDetails.CertifiedFrom,certificationDetails.Year);
+                _certificationsDeleteComponent.AddCertifications(certificationDetails.CertificateOrAward, certificationDetails.CertifiedFrom, certificationDetails.Year);
                 var successMessage = _certificationsDeleteComponent.GetSuccessMessage();
                 Console.WriteLine($"Message:{successMessage}");
 

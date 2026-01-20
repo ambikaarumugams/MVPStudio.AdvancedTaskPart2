@@ -7,7 +7,7 @@ using Reqnroll;
 namespace MarsAdvancedTask.BDD.StepDefinitions
 {
     [Binding]
-    [Scope(Feature ="Description")]
+    [Scope(Feature = "Description")]
     public class DescriptionSteps
     {
         private readonly TestState _state;
@@ -154,7 +154,6 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
             Console.WriteLine(actualText);
             _state.ActualDescriptionMessages.Add(actualText);
             _state.ExpectedDescriptionMessages.Add(descriptionDetails.DescriptionText.ToString());
-
         }
 
         [Then("I should see the appropriate message")]

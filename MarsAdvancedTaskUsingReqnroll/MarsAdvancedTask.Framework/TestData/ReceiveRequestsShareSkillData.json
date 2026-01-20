@@ -1,0 +1,30 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Performance Testing Bootcamp",
+      "Description": "Learn how to test system performance using JMeter and Gatling",
+      "Category": "Test Automation",
+      "SubCategory": "Performance Testing",
+      "Tags": ["JMeter", "Gatling", "Load Test"],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Morning Bootcamp",
+          "StartDateTime": "01/15/2026 09:00 AM",
+          "EndDateTime": "01/15/2026 12:00 PM",
+          "Repeat": "Never",
+          "Description": "Performance testing hands-on session",
+          "Owner": "UserA"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": ["Selenium", "API Testing"],
+      "WorkSamples": ["TestData\\PerformanceBootcamp.jpg"],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null
+    }
+  ]
+}

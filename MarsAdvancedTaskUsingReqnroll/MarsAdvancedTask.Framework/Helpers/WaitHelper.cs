@@ -8,7 +8,7 @@ namespace MarsAdvancedTask.Framework.Helpers
         private IWebDriver Driver { get; }
         private readonly WebDriverWait _wait;
 
-        public WaitHelper(IWebDriver driver,int timeoutSeconds=10)
+        public WaitHelper(IWebDriver driver, int timeoutSeconds = 10)
         {
             Driver = driver;
             _wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(timeoutSeconds));
@@ -54,7 +54,7 @@ namespace MarsAdvancedTask.Framework.Helpers
 
         public void SafeClick(By locator, int maxRetries = 3)
         {
-            for(int attempt=0;attempt<maxRetries;attempt++)
+            for (int attempt = 0; attempt < maxRetries; attempt++)
             {
                 try
                 {

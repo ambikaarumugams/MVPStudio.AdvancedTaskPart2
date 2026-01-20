@@ -8,7 +8,7 @@
     public class TestData
     {
         public EducationDetails EducationDetailsToAdd { get; set; } = new();
-        public EducationDetails? EducationDetailsToDelete { get; set; } 
+        public EducationDetails? EducationDetailsToDelete { get; set; }
     }
 
     public class EducationDetails

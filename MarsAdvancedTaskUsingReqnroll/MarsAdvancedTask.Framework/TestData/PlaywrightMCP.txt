@@ -1,0 +1,12 @@
+The Playwright MCP server is a tool that allows AI agents and large language models (LLMs) to interact with and automate real web browsers using the Playwright framework.
+MCP stands for Model Context Protocol, an open protocol for standardizing communication between AI clients and external tools. 
+Key Concepts
+AI-Powered Automation: The primary purpose of the Playwright MCP server is to enable AI assistants (like GitHub Copilot or Claude Code) to perform browser actions based on natural language prompts.
+Structured Communication: Instead of relying on pixels or screenshots, the server provides the AI with structured data, such as the page's DOM and accessibility tree. This allows for more reliable and deterministic interactions.
+Shared Sessions: The MCP server can manage shared Playwright browser instances, allowing multiple clients or AI agents to collaborate on testing or automation tasks within the same context.
+Tooling Integration: It integrates with various tools and IDEs like VS Code, Cursor, and others, acting as a bridge between the AI client and the browser automation capabilities of Playwright. 
+How It Works
+An AI client (e.g., a code assistant in your IDE) sends a request to the Playwright MCP server using the Model Context Protocol.
+The MCP server receives the request and translates it into specific Playwright browser actions (e.g., navigate to a URL, click a button, type text).
+Playwright executes these actions in a real browser (Chromium, Firefox, or WebKit).
+The server then sends structured feedback, such as the new page state or an accessibility snapshot, back to the AI client, allowing the model to adapt and determine the next steps. 

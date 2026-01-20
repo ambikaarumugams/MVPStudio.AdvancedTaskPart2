@@ -3,7 +3,6 @@ using OpenQA.Selenium;
 
 namespace MarsAdvancedTask.Framework.Pages
 {
-
     public class SignInComponent
     {
         private readonly TestState _state;
@@ -19,6 +18,7 @@ namespace MarsAdvancedTask.Framework.Pages
         private readonly By _passwordElement = By.XPath("//input[@placeholder='Password']");
         private readonly By _loginButtonElement = By.XPath("//button[normalize-space()='Login']");
         private readonly By _welcomeMessageElement = By.XPath("//span[contains(@class, 'dropdown') and contains(normalize-space(), 'Ambika')]");
+        private readonly By _logoutButtonElement = By.XPath("//button[normalize-space()='Sign Out']");
 
         //Action Methods
         public void ClickSignInButton()
@@ -52,6 +52,11 @@ namespace MarsAdvancedTask.Framework.Pages
             EnterUserName(username);
             EnterPassword(password);
             ClickLoginButton();
+        }
+
+        public void SignOut()
+        {
+            _state.Wait.WaitUntilElementToBeClickable(_logoutButtonElement).Click();
         }
     }
 }

@@ -1,72 +1,72 @@
 {
-    "ShareSkills": [
+  "ShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation",
+      "Description": "Comprehensive Power BI training covering data preparation modeling DAX queries dashboards and reports for business insights",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
         {
-            "Title": "Power BI Training Course Covering Data Preparation",
-            "Description": "Comprehensive Power BI training covering data preparation modeling DAX queries dashboards and reports for business insights",
-            "Category": "Data Analysis & Business Intelligence",
-            "SubCategory": "PowerBI",
-            "Tags": [
-                "PowerBI",
-                "Data Analysis"
-            ],
-            "ServiceType": "0",
-            "LocationType": "1",
-            "Events": [
-                {
-                    "Title": "Power BI",
-                    "StartDateTime": "10/20/2025 10:30 AM",
-                    "EndDateTime": "25/30/2025 05:00PM",
-                    "Repeat": "Weekly",
-                    "Description": "Data Modeling",
-                    "Owner": "Charlie"
-                }
-            ],
-            "SkillTradeType": "Skill-exchange",
-            "Credit": null,
-            "SkillExchangeTags": [
-                "Python",
-                "SQL"
-            ],
-            "WorkSamples": ["TestData\\STLC.png"],
-            "Active": "true",
-            "ExpectedToastMessage": "Service Listing Added successfully",
-            "ExpectedToastContains": null,
-            "ExpectedFieldErrorMessage":null
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Data Modeling",
+          "Owner": "Charlie"
         }
-    ],
-    "EditShareSkills": [
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Python",
+        "SQL"
+      ],
+      "WorkSamples": [ "TestData\\STLC.png" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Reports",
+      "Description": "fhgdjhkljljsaljdlkjuloujrljuelfjljsdalfhklhlkjljljfsljlashlasfhlklkjlasfjlhfslhashlfl",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
         {
-            "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Reports",
-            "Description": "fhgdjhkljljsaljdlkjuloujrljuelfjljsdalfhklhlkjljljfsljlashlasfhlklkjlasfjlhfslhashlfl",
-            "Category": "Data Analysis & Business Intelligence",
-            "SubCategory": "PowerBI",
-            "Tags": [
-                "PowerBI",
-                "Data Analysis"
-            ],
-            "ServiceType": "0",
-            "LocationType": "1",
-            "Events": [
-                {
-                    "Title": "Power BI",
-                    "StartDateTime": "10/20/2025 10:30 AM",
-                    "EndDateTime": "25/30/2025 05:00PM",
-                    "Repeat": "Weekly",
-                    "Description": "Business Intelligence",
-                    "Owner": "Charlie"
-                }
-            ],
-            "SkillTradeType": "Skill-exchange",
-            "Credit": null,
-            "SkillExchangeTags": [
-                "API",
-                "Postman"
-            ],
-            "WorkSamples": ["TestData\\STLC.png"],
-            "Active": "true",
-            "ExpectedToastMessage": "Invalid Description",
-            "ExpectedToastContains": null,
-            "ExpectedFieldErrorMessage": null
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
         }
-    ]
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "API",
+        "Postman"
+      ],
+      "WorkSamples": [ "TestData\\STLC.png" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Invalid Description",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
 }

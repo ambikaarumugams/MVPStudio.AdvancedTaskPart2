@@ -35,7 +35,7 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
         {
             var scenario = JsonHelper.ReadJson<EducationModel>($"TestData/{fileName}.json");
 
-            foreach (var testItem in scenario.TestItems) 
+            foreach (var testItem in scenario.TestItems)
             {
                 var educationDetails = testItem.EducationDetailsToAdd; //Add
                 _educationDeleteComponent.AddEducationDetails(educationDetails.CollegeUniversityName, educationDetails.Country, educationDetails.Title, educationDetails.Degree, educationDetails.YearOfGraduation);
@@ -71,7 +71,7 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
                 _state.CleanupEducationAdd.Add(educationDetails.CollegeUniversityName);
 
                 var detailsToDelete = testItem.EducationDetailsToDelete;  //Delete
-                _educationDeleteComponent.ExpireSession(); 
+                _educationDeleteComponent.ExpireSession();
                 _educationDeleteComponent.DeleteSpecificEducation(detailsToDelete.CollegeUniversityName);
                 var errorMessage = _educationDeleteComponent.GetErrorMessage();
                 _state.ActualEducationMessages.Add(errorMessage);
@@ -79,7 +79,7 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
             }
         }
 
-        [Then("I should login again to perform cleanup")] 
+        [Then("I should login again to perform cleanup")]
         public void ThenIShouldLoginAgainToPerformCleanup()
         {
             _educationDeleteComponent.ClickSignOutButton();

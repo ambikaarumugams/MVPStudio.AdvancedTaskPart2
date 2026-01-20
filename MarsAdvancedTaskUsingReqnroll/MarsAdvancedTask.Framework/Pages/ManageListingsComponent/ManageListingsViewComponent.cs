@@ -1,6 +1,5 @@
 ﻿using MarsAdvancedTask.Framework.Helpers;
 using OpenQA.Selenium;
-using OpenQA.Selenium.DevTools.V140.DOM;
 
 namespace MarsAdvancedTask.Framework.Pages.ManageListingsComponent
 {

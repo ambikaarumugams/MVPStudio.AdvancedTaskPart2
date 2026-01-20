@@ -47,10 +47,14 @@ namespace MarsAdvancedTask.BDD.Hooks
 
             // Create WebDriver using DriverFactory
             _state.Driver = DriverFactory.CreateDriver(_config.Browser);
+
+            _objectContainer.RegisterInstanceAs(_state.Driver);
+
             _state.Driver.Navigate().GoToUrl(_config.Environment.BaseUrl);
             _state.Driver.Manage().Window.Maximize();
 
             _state.Test = _scenarioTest; //Assign test to state early (scenario level node)
+            _objectContainer.RegisterInstanceAs(_state.Test);
 
             _state.Wait = new WaitHelper(_state.Driver);  //Helpers 
             _state.ScreenshotHelper = new ScreenshotHelper(_state.Driver);
@@ -59,8 +63,6 @@ namespace MarsAdvancedTask.BDD.Hooks
             _state.SignInComponent = new SignInComponent(_state);
 
             //Register with BoDi
-            _objectContainer.RegisterInstanceAs(_state.Test);
-            _objectContainer.RegisterInstanceAs(_state.Driver);
             _objectContainer.RegisterInstanceAs(_state.Wait);
             _objectContainer.RegisterInstanceAs(_state.Assert);
             _objectContainer.RegisterInstanceAs(_state.JsonHelper);
@@ -74,7 +76,6 @@ namespace MarsAdvancedTask.BDD.Hooks
         }
 
         [AfterStep]
-
         public void AfterStep(ScenarioContext scenarioContext)
         {
             var stepInfo = scenarioContext.StepContext.StepInfo;
@@ -104,7 +105,7 @@ namespace MarsAdvancedTask.BDD.Hooks
         }
 
         [AfterScenario]
-        public void CleanUpDataAfterScenario(FeatureContext featureContext)
+        public void CleanUpDataAfterScenario(FeatureContext featureContext, ScenarioContext scenarioContext)
         {
             var tags = featureContext.FeatureInfo.Tags;
             if (tags.Contains("EducationAdd") || tags.Contains("EducationDelete"))
@@ -173,6 +174,55 @@ namespace MarsAdvancedTask.BDD.Hooks
                     }
                 }
             }
+            else if (tags.Contains("ManageListingsSendRequest"))
+            {
+                var manageListingsEditComponent = new ManageListingsEditComponent(_state);
+                foreach (var manageListingEdit in _state.CleanupForSendRequest)
+                {
+                    try
+                    {
+                        manageListingsEditComponent.DeleteSpecificSharedSkill(manageListingEdit);
+                        Console.WriteLine($"[CleanUp] Deleted skill from Manage listings:{manageListingEdit}");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"[CLEANUP FAILED] Manage Listings: {manageListingEdit} — {ex.Message}");
+                    }
+                }
+            }
+            else if (tags.Contains("ManageRequestsReceiveRequest") || tags.Contains("ManageRequestsSentRequest"))
+            {
+                var manageListingsEditComponent = new ManageListingsEditComponent(_state);
+                foreach (var manageListingEdit in _state.CleanupForSendRequest)
+                {
+                    try
+                    {
+                        manageListingsEditComponent.DeleteSpecificSharedSkill(manageListingEdit);
+                        Console.WriteLine($"[CleanUp] Deleted skill from Manage listings:{manageListingEdit}");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"[CLEANUP FAILED] Manage Listings: {manageListingEdit} — {ex.Message}");
+                    }
+                }
+            }
+            else if (tags.Contains("ManageRequestsCompleteRequest"))
+            {
+                var manageListingsEditComponent = new ManageListingsEditComponent(_state);
+                foreach (var manageListingEdit in _state.CleanupManageListingsEdit)
+                {
+                    try
+                    {
+                        manageListingsEditComponent.DeleteSpecificSharedSkill(manageListingEdit);
+                        Console.WriteLine($"[CleanUp] Deleted skill from Manage listings:{manageListingEdit}");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"[CLEANUP FAILED] Manage Listings: {manageListingEdit} — {ex.Message}");
+                    }
+                }
+            }
+
             _state.Driver.Quit();
         }
 

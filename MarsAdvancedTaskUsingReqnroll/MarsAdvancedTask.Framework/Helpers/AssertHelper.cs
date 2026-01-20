@@ -89,7 +89,6 @@ namespace MarsAdvancedTask.Framework.Helpers
         public void IsTrue(List<bool> actual)
         {
             Assert.That(actual, Is.Not.Null.And.Not.Empty, "The list is null or empty.");
-
             // Ensure all values are true
             Assert.That(actual.All(x => x), Is.True, "Message: One or more items in the list are false (cancel failed)");
         }

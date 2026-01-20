@@ -1,0 +1,147 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Test Automation Advanced",
+      "Description": "Test automation using Selenium,Nunit and Reqnroll",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [
+        "Selenium",
+        "BDD",
+        "Reqnroll"
+      ],
+      "ServiceType": "0",
+      "LocationType": "0",
+      "Events": [
+        {
+          "Title": "Mon Slot",
+          "StartDateTime": "9/30/2025 10:30 AM",
+          "EndDateTime": "9/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Automation office hour",
+          "Owner": "Alex"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "API",
+        "Postman"
+      ],
+      "WorkSamples": [ "TestData\\TA - Week 2 - Day 1 Slides.pdf" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Yoga Classes Intermediate",
+      "Description": "Hatha and Vinyasa yoga classes for all levels.",
+      "Category": "Fun & Lifestyle",
+      "SubCategory": "Health, Nutrition & Fitness",
+      "Tags": [
+        "Yoga",
+        "Wellness",
+        "Fitness"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Yoga",
+          "StartDateTime": "10/30/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Yoga for beginners",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "SkillExchangeTags": [
+        "Diet",
+        "Excercises"
+      ],
+      "Credit": null,
+      "WorkSamples": [
+        "TestData\\bodmas.pdf"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards",
+      "Description": "Power BI training course covering data preparation, modeling, and DAX calculations for dashboards.",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Monthly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "##$$#$",
+        "1122",
+        "hgjhkh"
+      ],
+      "WorkSamples": [
+        "TestData\\TA - Week 2 - Day 1 Slides.pdf"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Invalid Skill Tags",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards",
+      "Description": "Power BI training course covering data preparation, modeling, and DAX calculations for dashboards.",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Monthly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "   Diet",
+        "657668  "
+      ],
+      "WorkSamples": [
+        "TestData\\bodmas.pdf"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Invalid Skill Tags",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
+}

@@ -4,6 +4,7 @@
     {
         public List<ShareSkillDetails> ShareSkills { get; set; } = new();
         public List<ShareSkillDetails> EditShareSkills { get; set; } = new();
+        public List<ShareSkillDetails> DeleteShareSkills { get; set; } = new();
     }
 
     public class ShareSkillDetails

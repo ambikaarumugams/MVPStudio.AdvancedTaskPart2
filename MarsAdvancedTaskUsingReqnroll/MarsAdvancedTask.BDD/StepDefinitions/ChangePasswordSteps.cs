@@ -88,7 +88,7 @@ namespace MarsAdvancedTask.BDD.StepDefinitions
             _state.ExpectedChangePasswordMessage.Add(changePasswordDetails.ExpectedMessage);
         }
 
-        [When("I enter different values for the new password and confirm password from the json file {string}")] 
+        [When("I enter different values for the new password and confirm password from the json file {string}")]
         public void WhenIEnterDifferentValuesForTheNewPasswordAndConfirmPasswordFromTheJsonFile(string fileName)  //New password and confirm password mismatch
         {
             var testItems = JsonHelper.ReadJson<ChangePasswordModel>($"TestData/{fileName}");
