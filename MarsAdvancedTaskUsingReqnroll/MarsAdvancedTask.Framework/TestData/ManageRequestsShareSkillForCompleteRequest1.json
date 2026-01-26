@@ -1,0 +1,30 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Machine Learning with Python",
+      "Description": "Build ML models using Scikit learn and TensorFlow",
+      "Category": "Data Science",
+      "SubCategory": "Python Programming",
+      "Tags": [ "Python", "ML", "TensorFlow" ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Evening Class",
+          "StartDateTime": "05/08/2026 06:30 PM",
+          "EndDateTime": "05/08/2026 08:30 PM",
+          "Repeat": "Never",
+          "Description": "Machine learning practical session",
+          "Owner": "UserB"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "Deep Learning", "AI" ],
+      "WorkSamples": [ "TestData\\MachineLearning.jpg" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null
+    }
+  ]
+}

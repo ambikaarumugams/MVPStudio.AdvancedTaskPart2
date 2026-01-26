@@ -1,0 +1,30 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Data Science Fundamentals",
+      "Description": "Learn data analysis using Python, Pandas, and NumPy",
+      "Category": "Data Science",
+      "SubCategory": "Big Data",
+      "Tags": ["Python", "Pandas", "NumPy"],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Weekend Session",
+          "StartDateTime": "04/12/2026 10:00 AM",
+          "EndDateTime": "04/12/2026 12:00 PM",
+          "Repeat": "Never",
+          "Description": "Hands-on data analysis workshop",
+          "Owner": "UserA"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": ["Excel", "Statistics"],
+      "WorkSamples": ["TestData\\DataScience.jpg"],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null
+    }
+  ]
+}

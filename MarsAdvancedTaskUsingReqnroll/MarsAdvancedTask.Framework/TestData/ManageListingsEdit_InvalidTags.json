@@ -1,0 +1,73 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Yoga Classes Intermediate",
+      "Description": "Hatha and Vinyasa yoga classes for all levels.",
+      "Category": "Fun & Lifestyle",
+      "SubCategory": "Health, Nutrition & Fitness",
+      "Tags": [
+        "Yoga",
+        "Wellness",
+        "Fitness"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Yoga",
+          "StartDateTime": "10/30/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Never",
+          "Description": "Yoga for beginners",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "SkillExchangeTags": [
+        "Diet",
+        "Excercises"
+      ],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listings Added successfully",
+      "ExpectedToastContains": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": "Data Science with Big Data Analytics",
+      "Description": "Learn how data science techniques are applied to big data environments This course covers the fundamentals of distributed data storage parallel processing and analytics using tools such as Hadoop Spark and Hive Students will gain hands on experience building scalable pipelines and applying machine learning models to large datasets",
+      "Category": "Data Science",
+      "SubCategory": "Big Data",
+      "Tags": [
+        "##$$#$",
+        "1122",
+        "hgjhkh"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Data Science",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "The fundamentals distributed data storage parallel processing and analytics using tools such as Hadoop Spark and Hive",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "API",
+        "Postman"
+      ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Invalid Tags",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
+}

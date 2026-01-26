@@ -1,0 +1,12 @@
+{
+  "Search": {
+    "Category": "Test Automation",
+    "ListingTitle": "Test Automation"
+  },
+  "Request": {
+    "Message": "Hi, I am interested in your skill. Let's connect."
+  },
+  "Expected": {
+    "SuccessMessage": "Request sent"
+  }
+}

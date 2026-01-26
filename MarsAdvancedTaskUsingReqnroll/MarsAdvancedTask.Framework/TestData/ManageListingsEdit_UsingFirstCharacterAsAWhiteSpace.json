@@ -1,0 +1,72 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Katalon",
+      "Description": "Katalon Studio",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [
+        "Automation",
+        "Katalon"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Katalon",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the concepts of Katalon",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [ "TestData\\ActionClass.txt" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": " Katalon",
+      "Description": "Katalon Studio",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [
+        "Automation",
+        "Katalon"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Katalon",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the concepts of Katalon",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [ "TestData\\ActionClass.txt" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": "First character must be an alphabet character or a number."
+    }
+  ]
+}

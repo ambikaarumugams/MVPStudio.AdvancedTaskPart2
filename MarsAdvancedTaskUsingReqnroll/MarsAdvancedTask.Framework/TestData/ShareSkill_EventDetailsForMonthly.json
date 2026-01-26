@@ -1,0 +1,13 @@
+{
+  "EventTitle": "Practical session",
+  "StartDateTime": "08/09/2025 10:00 AM",
+  "EndDateTime": "08/09/2025 11:00 AM",
+  "AllDay": "false",
+  "RepeatRule": "Monthly",
+  "RepeatMonths": "3",
+  "RepeatEvery": "second",
+  "RepeatWeekday": "Monday",
+  "RepeatEndOn": "31/12/2025",
+  "Description": "Practical session for coding",
+  "Owner": "Alex"
+}

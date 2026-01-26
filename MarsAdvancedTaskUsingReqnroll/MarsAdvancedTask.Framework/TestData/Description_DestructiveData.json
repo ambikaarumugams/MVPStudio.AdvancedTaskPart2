@@ -1,0 +1,8 @@
+{
+  "DescriptionItems": [
+    {
+      "DescriptionText": "{LONG_1000}",
+      "ExpectedDescriptionMessage": "Invalid Description"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Repor",
+      "Description": "Comprehensive Power BI training covering data preparation modeling DAX queries dashboards and reports for business insights",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Business Intelligence",
+          "Owner": "Alex"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "API", "Postman" ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
+}

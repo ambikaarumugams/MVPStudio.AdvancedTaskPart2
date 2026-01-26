@@ -1,0 +1,22 @@
+{
+  "TestItems": [
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "Oxford University",
+        "Country": "Angola",
+        "Title": "B.A",
+        "Degree": "Astrophysics",
+        "YearOfGraduation": "2018",
+        "EducationExpectedMessage": "Education has been added"
+      },
+      "EducationDetailsToDelete": {
+        "CollegeUniversityName": "Oxford University",
+        "Country": "Angola",
+        "Title": "B.A",
+        "Degree": "Astrophysics",
+        "YearOfGraduation": "2018",
+        "EducationExpectedMessage": "There is an error when removing the Education entry"
+      }
+    }
+  ]
+}

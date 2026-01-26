@@ -1,0 +1,107 @@
+Day-1
+---------
+
+Module-1: Software Testing Concepts   ( what??)
+
+Module-2: Software Testing Life Cycle (STLC)   (How??)
+
+Module-3: Software Testing Project & Templates
+
+Module-4: Agile Testing & Jira Tool
+
+Module-5: Usage of AI Tools in Manual Testing
+
+-----------
+
+A Software is a collection of computer programs that helps us to perform a task.
+
+
+ Types of Software:
+	1) System software
+			Ex: Device drivers, Operating Systems, Servers, Utilities, etc.
+			
+	2) Programming software
+			Ex: compilers, debuggers, interpreters, etc.
+	
+	3) Application software
+		Ex: Web Applications, Mobile Apps, Desktop Applications etc.
+		
+X bank-----> IT company----> Develop--->Testing--->Deliver---> X bank
+
+SDLC - Software Developement Life Cycle
+
+what is software testing?
+-----
+ Software Testing is a part of software development process.
+ Software Testing is an activity to detect and identify the defects in the software.
+ The objective of testing is to release quality product to the client. 
+
+ Software Quality
+ ---------------------
+Bug-free.
+Delivered on time.
+Within budget.
+Meets requirements and/or expectations. 
+Maintainable. 
+
+3 P's
+
+P - People
+P - Process
+P - Product
+
+
+Software/Application
+	Product
+	Project
+ 
+ If software application is developed for multiple customers based on market requirements then it called Product.
+ 
+ If software application is developed for specific customer based on the requirement then it is called Project.
+
+product based
+service based
+
+
+Error, 
+Bug/defect,  
+Failure
+
+
+Why the software has bugs?
+-------
+Miscommunication or no communication
+Software complexity
+Programming errors
+Changing requirements
+Lack of skilled tested
+
+
+Ind -- Mon-Fri
+Other --- Sun-Thurs
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

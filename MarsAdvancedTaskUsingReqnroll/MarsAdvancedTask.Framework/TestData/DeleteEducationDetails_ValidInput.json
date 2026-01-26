@@ -1,0 +1,22 @@
+{
+  "TestItems": [
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "Bharathidasan University",
+        "Country": "India",
+        "Title": "B.A",
+        "Degree": "Astrophysics",
+        "YearOfGraduation": "2018",
+        "EducationExpectedMessage": "Education has been added"
+      },
+      "EducationDetailsToDelete": {
+        "CollegeUniversityName": "Bharathidasan University",
+        "Country": "India",
+        "Title": "B.A",
+        "Degree": "Astrophysics",
+        "YearOfGraduation": "2018",
+        "EducationExpectedMessage": "Education entry successfully removed"
+      }
+    }
+  ]
+}

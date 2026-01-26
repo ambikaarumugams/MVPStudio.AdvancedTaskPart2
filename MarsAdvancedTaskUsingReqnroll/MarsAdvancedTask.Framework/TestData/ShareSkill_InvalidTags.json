@@ -1,0 +1,35 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Data Science with Big Data Analytics",
+      "Description": "Learn how data science techniques are applied to big data environments This course covers the fundamentals of distributed data storage parallel processing and analytics using tools such as Hadoop Spark and Hive Students will gain hands on experience building scalable pipelines and applying machine learning models to large datasets",
+      "Category": "Data Science",
+      "SubCategory": "Big Data",
+      "Tags": [
+        "##$$#$",
+        "1122",
+        "hgjhkh"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Data Science",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "The fundamentals distributed data storage parallel processing and analytics using tools such as Hadoop Spark and Hive",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "API", "Postman" ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Invalid Tags",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
+}

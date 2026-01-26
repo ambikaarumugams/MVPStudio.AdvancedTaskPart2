@@ -1,0 +1,8 @@
+{
+  "DescriptionItems": [
+    {
+      "DescriptionText": "@#@$$%^&*(()(*&^^%$$##@@!!!@$%%^&*",
+      "ExpectedDescriptionMessage": "First character can only be digit or letters"
+    }
+  ]
+}

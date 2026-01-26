@@ -1,0 +1,37 @@
+{
+  "TestItems": [
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "The University of Sydney",
+        "Country": "Australia",
+        "Title": "B.A",
+        "Degree": "Astrophysics",
+        "YearOfGraduation": "2018",
+        "EducationExpectedMessage": "Education has been added"
+      },
+      "EducationDetailsToDelete": null
+    },
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "Stanford University",
+        "Country": "United States",
+        "Title": "M.B.A",
+        "Degree": "Master of Business Administration",
+        "YearOfGraduation": "2021",
+        "EducationExpectedMessage": "Education has been added"
+      },
+      "EducationDetailsToDelete": null
+    },
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "Oxford University",
+        "Country": "United Kingdom",
+        "Title": "PHD",
+        "Degree": "Computer Science",
+        "YearOfGraduation": "2023",
+        "EducationExpectedMessage": "Education has been added"
+      },
+      "EducationDetailsToDelete": null
+    }
+  ]
+}

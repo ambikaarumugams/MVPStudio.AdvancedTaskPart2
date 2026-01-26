@@ -1,0 +1,15 @@
+{
+  "TestItems": [
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "University of Sydney",
+        "Country": "Australia",
+        "Title": "B.Tech",
+        "Degree": "Computer science and information technology",
+        "YearOfGraduation": "2009",
+        "EducationExpectedMessage": null
+      },
+      "EducationDetailsToDelete": null
+    }
+  ]
+}

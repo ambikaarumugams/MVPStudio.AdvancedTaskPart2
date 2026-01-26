@@ -1,0 +1,73 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations",
+      "Description": "Comprehensive Power BI training",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "DAX Calculations",
+        "Data warehouse"
+      ],
+      "WorkSamples": [ "TestData\\TA - Week 1 - Day 2 Slides.pdf" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations",
+      "Description": "  Comprehensive Power BI training",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis",
+        "Dashboard"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "DAX Calculations",
+        "Data warehouse"
+      ],
+      "WorkSamples": [ "TestData\\TA - Week 1 - Day 2 Slides.pdf" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": "First character must be an alphabet character or a number."
+    }
+  ]
+}

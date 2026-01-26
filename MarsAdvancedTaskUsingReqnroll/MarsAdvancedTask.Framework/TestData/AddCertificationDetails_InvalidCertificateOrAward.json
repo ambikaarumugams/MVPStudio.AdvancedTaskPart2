@@ -1,0 +1,40 @@
+{
+  "TestItems": [
+    {
+      "CertificationDetailsToAdd": {
+        "CertificateOrAward": "fhgfhjgjkhkjn",
+        "CertifiedFrom": "ISTQB",
+        "Year": "2024",
+        "CertificationExpectedMessage": "Certification information was invalid"
+      },
+      "CertificationDetailsToDelete": null
+    },
+    {
+      "CertificationDetailsToAdd": {
+        "CertificateOrAward": "123456789",
+        "CertifiedFrom": "ISTQB",
+        "Year": "2024",
+        "CertificationExpectedMessage": "Certification information was invalid"
+      },
+      "CertificationDetailsToDelete": null
+    },
+    {
+      "CertificationDetailsToAdd": {
+        "CertificateOrAward": "!@#$%^&*",
+        "CertifiedFrom": "ATA, CP-SAT",
+        "Year": "2024",
+        "CertificationExpectedMessage": "Certification information was invalid"
+      },
+      "CertificationDetailsToDelete": null
+    },
+    {
+      "CertificationDetailsToAdd": {
+        "CertificateOrAward": "       ",
+        "CertifiedFrom": "ISTQB",
+        "Year": "2024",
+        "CertificationExpectedMessage": "Certification information was invalid"
+      },
+      "CertificationDetailsToDelete": null
+    }
+  ]
+}

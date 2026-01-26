@@ -1,0 +1,30 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Web Automation Coaching",
+      "Description": "One on one coaching for Selenium and C sharp automation testing",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": ["Selenium", "C#", "Automation"],
+      "ServiceType": "0",
+      "LocationType": "0",
+      "Events": [
+        {
+          "Title": "Evening Slot",
+          "StartDateTime": "11/20/2025 06:00 PM",
+          "EndDateTime": "11/20/2025 08:00 PM",
+          "Repeat": "Never",
+          "Description": "Automation mentoring session",
+          "Owner": "UserB"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": ["Postman", "API Testing"],
+      "WorkSamples": ["TestData\\WebAutomation.jpg"],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null
+    }
+  ]
+}

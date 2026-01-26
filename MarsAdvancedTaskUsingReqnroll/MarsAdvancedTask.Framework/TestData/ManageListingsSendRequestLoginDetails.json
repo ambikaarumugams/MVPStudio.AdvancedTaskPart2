@@ -1,0 +1,14 @@
+{
+  "Users": [
+    {
+      "Key": "UserA",
+      "Username": "Test123@gmail.com",
+      "Password": "Mars123"
+    },
+    {
+      "Key": "UserB",
+      "Username": "petetest@gmail.com",
+      "Password": "admin123"
+    }
+  ]
+}

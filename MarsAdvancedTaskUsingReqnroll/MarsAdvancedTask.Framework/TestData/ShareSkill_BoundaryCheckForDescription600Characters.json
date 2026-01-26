@@ -1,0 +1,35 @@
+{
+  "ShareSkills": [
+
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards",
+      "Description": "Comprehensive Power BI training designed to take learners from beginner to advanced. Topics include connecting to diverse data sources, transforming data with Power Query, creating relationships, building star schemas, and writing efficient DAX calculations. Learners will practice building interactive dashboards with bookmarks, drillthrough, and slicers. The course also introduces deployment pipelines, security best practices, and optimization tips for large datasets.",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Yearly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "API", "Postman" ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+    "ShareSkills": [
+      {
+        "Title": "Test Automation",
+        "Description": "Test automation using Selenium,Nunit and Reqnroll framework",
+        "Category": "Test Automation",
+        "SubCategory": "Selenium",
+        "Tags": [
+          "Selenium",
+          "BDD",
+          "Reqnroll"
+        ],
+        "ServiceType": "1",
+        "LocationType": "1",
+        "Events": [
+          {
+            "Title": "Test Automation",
+            "StartDateTime": "10/30/2025 10:30 AM",
+            "EndDateTime": "25/30/2025 05:00PM",
+            "Repeat": "Never",
+            "Description": "Test automation using Selenium,Nunit",
+            "Owner": "Bob"
+          }
+        ],
+        "SkillTradeType": "Credit",
+        "Credit": "5",
+        "SkillExchangeTags": [],
+        "WorkSamples": [
+          "TestData\\SampleTextFile.txt"
+        ],
+        "Active": "true",
+        "ExpectedToastMessage": "Service Listing Added successfully",
+        "ExpectedToastContains": null
+      }
+    ]
+}

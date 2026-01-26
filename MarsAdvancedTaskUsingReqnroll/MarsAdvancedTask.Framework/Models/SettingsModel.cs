@@ -1,0 +1,30 @@
+﻿namespace MarsAdvancedTask.Framework.Models
+{
+    public class Settings
+    {
+        public BrowserSettings Browser { get; set; } = new();
+        public ReportSettings Report { get; set; } = new();
+        public EnvironmentSettings Environment { get; set; } = new();
+    }
+
+    public class BrowserSettings
+    {
+        public string? Type { get; set; }
+        public bool Headless { get; set; }
+        public int TimeoutSeconds { get; set; }
+    }
+
+    public class ReportSettings
+    {
+        public string? Path { get; set; }
+        public string? Title { get; set; }
+    }
+
+    public class EnvironmentSettings
+    {
+        public string? BaseUrl { get; set; }
+        public string? TestingEnvironment { get; set; }
+        public string? Tester { get; set; }
+        public string? OS { get; set; }
+    }
+}

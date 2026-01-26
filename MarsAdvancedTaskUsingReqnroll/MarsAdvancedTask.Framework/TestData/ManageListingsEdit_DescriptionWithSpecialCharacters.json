@@ -1,0 +1,72 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations",
+      "Description": "Comprehensive Power BI training covering data preparation modeling DAX queries dashboards and reports for business insights",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Data Modeling",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Python",
+        "SQL"
+      ],
+      "WorkSamples": [ "TestData\\Software_Testing_Life_Cycle_STLC.png" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards and Reports",
+      "Description": "Power BI - Data Modeling, DAX Measures, and Dashboard Development",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "API",
+        "Postman"
+      ],
+      "WorkSamples": [ "TestData\\Software_Testing_Life_Cycle_STLC.png" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": "Special characters are not allowed."
+    }
+  ]
+}

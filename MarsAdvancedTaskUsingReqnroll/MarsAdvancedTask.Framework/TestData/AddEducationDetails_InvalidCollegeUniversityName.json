@@ -1,0 +1,48 @@
+{
+  "TestItems": [
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "fdhjfhghjkjm",
+        "Country": "Australia",
+        "Title": "B.A",
+        "Degree": "Astrophysics",
+        "YearOfGraduation": "2018",
+        "EducationExpectedMessage": "Education information was invalid"
+      },
+      "EducationDetailsToDelete": null
+    },
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "123567890",
+        "Country": "United States",
+        "Title": "M.B.A",
+        "Degree": "Master of Business Administration",
+        "YearOfGraduation": "2021",
+        "EducationExpectedMessage": "Education information was invalid"
+      },
+      "EducationDetailsToDelete": null
+    },
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "!@#$%&**&%",
+        "Country": "United Kingdom",
+        "Title": "PHD",
+        "Degree": "Computer Science",
+        "YearOfGraduation": "2023",
+        "EducationExpectedMessage": "Education information was invalid"
+      },
+      "EducationDetailsToDelete": null
+    },
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": " ",
+        "Country": "United Kingdom",
+        "Title": "PHD",
+        "Degree": "Computer Science",
+        "YearOfGraduation": "2025",
+        "EducationExpectedMessage": "Education information was invalid"
+      },
+      "EducationDetailsToDelete": null
+    }
+  ]
+}

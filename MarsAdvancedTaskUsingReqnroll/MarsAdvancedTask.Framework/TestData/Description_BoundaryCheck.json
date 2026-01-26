@@ -1,0 +1,16 @@
+{
+  "DescriptionItems": [
+    {
+      "DescriptionText": "I am passionate about Automation Testing and have been building my skills in designing and maintaining test automation frameworks. My focus is on using tools like Selenium, NUnit, SpecFlow, and Extent Reports to ensure efficient, reliable, and scalable test execution.",
+      "ExpectedDescriptionMessage": null
+    },
+    {
+      "DescriptionText": "I am passionate about Automation Testing and have been building my skills in designing and maintaining test automation frameworks. My focus is on using tools like Selenium, NUnit, SpecFlow, and Extent Reports to ensure efficient, reliable, and scalable test execution. I enjoy working on test design, data-driven testing, and implementing best practices that improve software quality. Exploring new tools, enhancing frameworks, and solving real-world testing challenges are areas that keep me motivated.I am passionate about Automation Testing and have been building my skills in designing and maintaining test automation frameworks. My focus is on using tools like Selenium, NUnit, SpecFlow, and Extent Reports to ensure efficient, reliable, and scalable test execution.",
+      "ExpectedDescriptionMessage": null
+    },
+    {
+      "DescriptionText": "I am passionate about Automation Testing and have been building my skills in designing and maintaining test automation frameworks. My focus is on using tools like Selenium, NUnit, SpecFlow, and Extent Reports to ensure efficient, reliable, and scalable test execution. I enjoy working on test design, data-driven testing, and implementing best practices that improve software quality. Exploring new tools, enhancing frameworks, and solving real-world testing challenges are areas that keep me motivated.",
+      "ExpectedDescriptionMessage": null
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "TestItems": [
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "",
+        "Country": "",
+        "Title": "",
+        "Degree": "",
+        "YearOfGraduation": "",
+        "EducationExpectedMessage": "Please enter all the fields"
+      },
+      "EducationDetailsToDelete": null
+    },
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "NIT",
+        "Country": "",
+        "Title": "",
+        "Degree": "",
+        "YearOfGraduation": "",
+        "EducationExpectedMessage": "Please enter all the fields"
+      },
+      "EducationDetailsToDelete": null
+    },
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "NIT",
+        "Country": "India",
+        "Title": "",
+        "Degree": "",
+        "YearOfGraduation": "",
+        "EducationExpectedMessage": "Please enter all the fields"
+      },
+      "EducationDetailsToDelete": null
+    },
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "NIT",
+        "Country": "India",
+        "Title": "M.Tech",
+        "Degree": "",
+        "YearOfGraduation": "",
+        "EducationExpectedMessage": "Please enter all the fields"
+      },
+      "EducationDetailsToDelete": null
+    },
+    {
+      "EducationDetailsToAdd": {
+        "CollegeUniversityName": "NIT",
+        "Country": "India",
+        "Title": "M.Tech",
+        "Degree": "Power Electronics",
+        "YearOfGraduation": "",
+        "EducationExpectedMessage": "Please enter all the fields"
+      },
+      "EducationDetailsToDelete": null
+    }
+  ]
+}

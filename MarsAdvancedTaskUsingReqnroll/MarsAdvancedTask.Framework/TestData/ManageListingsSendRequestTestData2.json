@@ -1,0 +1,30 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "API Automation",
+      "Description": "API automation using Postman and REST Assured",
+      "Category": "Test Automation",
+      "SubCategory": "API Testing",
+      "Tags": [ "API", "Postman", "REST" ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Wed Slot",
+          "StartDateTime": "10/15/2025 02:00 PM",
+          "EndDateTime": "10/15/2025 06:00 PM",
+          "Repeat": "Never",
+          "Description": "API testing support session",
+          "Owner": "Chris"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "Docker", "CI/CD" ],
+      "WorkSamples": [ "TestData\\ApiAutomation.png" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null
+    }
+  ]
+}

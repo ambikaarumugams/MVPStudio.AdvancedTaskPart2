@@ -1,0 +1,504 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Minecraft",
+      "Description": "Coding",
+      "Category": "Game Development",
+      "SubCategory": "3D Modeling",
+      "Tags": [
+        "Coding",
+        "Minecraft"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Minecraft",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the coding concepts",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [
+        "TestData\\Minecraft.jpg"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Game Development",
+      "Description": "Katalon Studio",
+      "Category": "Game Development",
+      "SubCategory": "Game Design",
+      "Tags": [
+        "Game",
+        "Coding"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Gaming",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand gaming concepts",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [
+        "TestData\\Minecraft.jpg"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "RoBlox",
+      "Description": "Coding",
+      "Category": "Machine Learning",
+      "SubCategory": "Other",
+      "Tags": [
+        "HTML5",
+        "Development"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Roblox",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the coding concepts",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [
+        "TestData\\Minecraft.jpg"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Katalon1",
+      "Description": "Katalon Studio1",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [
+        "Automation",
+        "Katalon"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Katalon",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the concepts of Katalon",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [
+        "TestData\\Minecraft.jpg"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Katalon2",
+      "Description": "Katalon Studio2",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [
+        "Automation",
+        "Katalon"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Katalon",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the concepts of Katalon",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [
+        "TestData\\Minecraft.jpg"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Katalon3",
+      "Description": "Katalon Studio3",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [
+        "Automation",
+        "Katalon"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Katalon",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the concepts of Katalon",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [
+        "TestData\\Minecraft.jpg"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Katalon5",
+      "Description": "Katalon Studio5",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [
+        "Automation",
+        "Katalon"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Katalon",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the concepts of Katalon",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [
+        "TestData\\Minecraft.jpg"
+      ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    },
+    {
+      "Title": "Katalon6",
+      "Description": "Katalon Studio6",
+      "Category": "Test Automation",
+      "SubCategory": "Selenium",
+      "Tags": [
+        "Automation",
+        "Katalon"
+      ],
+      "ServiceType": "1",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Katalon",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Learn to understand the concepts of Katalon",
+          "Owner": "Bob"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "Playwright",
+        "Cypress"
+      ],
+      "WorkSamples": [ "TestData\\Minecraft.jpg" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+      "Title": " ",
+      "Description": " ",
+      "Category": " ",
+      "SubCategory": " ",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "Credit": null,
+      "SkillExchangeTags": [],
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": " ",
+      "Category": " ",
+      "SubCategory": " ",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": " ",
+      "SubCategory": " ",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "Credit": null,
+      "SkillExchangeTags": [],
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": " ",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": "Communication at Work",
+      "Tags": [],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": "Communication at Work",
+      "Tags": [
+        "Speaking",
+        "Work",
+        "Presentation"
+      ],
+      "ServiceType": null,
+      "LocationType": null,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": "Communication at Work",
+      "Tags": [
+        "Speaking",
+        "Work",
+        "Presentation"
+      ],
+      "ServiceType": 0,
+      "LocationType": 1,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": null,
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    },
+    {
+      "Title": "Public Speaking",
+      "Description": "Boost your confidence and master the art of public speaking with personalized coaching",
+      "Category": "Communication",
+      "SubCategory": "Communication at Work",
+      "Tags": [
+        "Speaking",
+        "Work",
+        "Presentation"
+      ],
+      "ServiceType": 0,
+      "LocationType": 1,
+      "Events": [
+        {
+          "Title": null,
+          "StartDateTime": null,
+          "EndDateTime": null,
+          "Repeat": null,
+          "Description": null,
+          "Owner": null
+        }
+      ],
+      "SkillTradeType": "Skill-Exchange",
+      "SkillExchangeTags": [],
+      "Credit": null,
+      "WorkSamples": [],
+      "Active": null,
+      "ExpectedToastMessage": "Please complete the form correctly.",
+      "ExpectedToastContains": null
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "ShareSkills": [
+    {
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations",
+      "Description": "Comprehensive Power BI training",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Weekly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [
+        "DAX Calculations",
+        "Data warehouse"
+      ],
+      "WorkSamples": [],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Added successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ],
+  "EditShareSkills": [
+    {
+
+      "Title": "Power BI Training Course Covering Data Preparation DAX Calculations Interactive Dashboards",
+      "Description": "Power BI training course covering data preparation, modeling, and DAX calculations for dashboards. This program includes topics like Power Query, incremental refresh, row level security, and enterprise reporting solutions with real life projects. Students will learn end to end workflows for transforming raw data into actionable insights and publishing reports in the Power BI Service.",
+      "Category": "Data Analysis & Business Intelligence",
+      "SubCategory": "PowerBI",
+      "Tags": [
+        "PowerBI",
+        "Data Analysis"
+      ],
+      "ServiceType": "0",
+      "LocationType": "1",
+      "Events": [
+        {
+          "Title": "Power BI",
+          "StartDateTime": "10/20/2025 10:30 AM",
+          "EndDateTime": "25/30/2025 05:00PM",
+          "Repeat": "Monthly",
+          "Description": "Business Intelligence",
+          "Owner": "Charlie"
+        }
+      ],
+      "SkillTradeType": "Skill-exchange",
+      "Credit": null,
+      "SkillExchangeTags": [ "API", "Postman" ],
+      "WorkSamples": [ "TestData\\Day-1.txt" ],
+      "Active": "true",
+      "ExpectedToastMessage": "Service Listing Updated successfully",
+      "ExpectedToastContains": null,
+      "ExpectedFieldErrorMessage": null
+    }
+  ]
+}
